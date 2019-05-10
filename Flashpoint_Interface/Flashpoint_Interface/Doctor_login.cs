@@ -18,7 +18,7 @@ namespace Flashpoint_Interface
     public partial class Doctor_login : Form
     {
         MySqlConnection sqlConn;
-        string myConnString = "server=196.253.108.211;user id=sipiwe;database=flashpointhospital_db;password=fL@$##0$P_db";
+        string myConnString = "server=localhost;user id=root;database=flashpointhospital_db;password=fL@$##0$P_db";
         public Doctor_login()
         {
             InitializeComponent();
@@ -55,7 +55,8 @@ namespace Flashpoint_Interface
             //Var to check Doctor ID
             string docName = "Not Found";
             string docSurname = "";
-            string sqlString = "CALL sp_CheckStaffID('" + txtDocID.Text + "')";
+            string docID = "";
+            string sqlString = "CALL sp_CheckStaffID('" + 12457896 + "')";//txtDocID.Text
 
             //ACTUALLY CHECKING DATABASE
             MySqlCommand cmd = new MySqlCommand(sqlString, sqlConn);
@@ -67,8 +68,10 @@ namespace Flashpoint_Interface
                 //PUTTING DOCTOR ID IN DOC VARIABLE
                 docName = dr["firstName"].ToString();
                 docSurname = dr["lastName"].ToString();
+                docID = dr["staffID"].ToString();
 
-                Doctor_Activities doctor_Activities = new Doctor_Activities(sqlConn, docName, docSurname);
+                sqlConn.Close();
+                Doctor_Activities doctor_Activities = new Doctor_Activities(sqlConn, docID, docName, docSurname);
                 doctor_Activities.ShowDialog();
             }
             else

@@ -75,18 +75,17 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.tbPgAppoint = new System.Windows.Forms.TabPage();
-            this.label17 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblStorePatID = new System.Windows.Forms.Label();
+            this.btnMakePrescript = new System.Windows.Forms.Button();
+            this.dataGrid_checkAppoint = new System.Windows.Forms.DataGridView();
             this.button7 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.tbPgWelcome = new System.Windows.Forms.TabPage();
             this.btnExit = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblDepartment = new System.Windows.Forms.Label();
             this.lblDocIDAndName = new System.Windows.Forms.Label();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabConDocActiv = new System.Windows.Forms.TabControl();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -100,10 +99,10 @@
             this.groupDrugs.SuspendLayout();
             this.groupONames.SuspendLayout();
             this.tbPgAppoint.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid_checkAppoint)).BeginInit();
             this.tbPgWelcome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tabControl2.SuspendLayout();
+            this.tabConDocActiv.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -621,9 +620,9 @@
             // tbPgAppoint
             // 
             this.tbPgAppoint.BackColor = System.Drawing.Color.Teal;
-            this.tbPgAppoint.Controls.Add(this.label17);
-            this.tbPgAppoint.Controls.Add(this.button9);
-            this.tbPgAppoint.Controls.Add(this.dataGridView1);
+            this.tbPgAppoint.Controls.Add(this.lblStorePatID);
+            this.tbPgAppoint.Controls.Add(this.btnMakePrescript);
+            this.tbPgAppoint.Controls.Add(this.dataGrid_checkAppoint);
             this.tbPgAppoint.Controls.Add(this.button7);
             this.tbPgAppoint.Controls.Add(this.label11);
             this.tbPgAppoint.Location = new System.Drawing.Point(4, 22);
@@ -634,34 +633,38 @@
             this.tbPgAppoint.Text = "Appointments";
             this.tbPgAppoint.Click += new System.EventHandler(this.tbPgAppoint_Click);
             // 
-            // label17
+            // lblStorePatID
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(471, 503);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(83, 13);
-            this.label17.TabIndex = 17;
-            this.label17.Text = "NB! Store PatID";
+            this.lblStorePatID.AutoSize = true;
+            this.lblStorePatID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStorePatID.Location = new System.Drawing.Point(342, 505);
+            this.lblStorePatID.Name = "lblStorePatID";
+            this.lblStorePatID.Size = new System.Drawing.Size(162, 25);
+            this.lblStorePatID.TabIndex = 17;
+            this.lblStorePatID.Text = "NB! Store PatID";
+            this.lblStorePatID.Visible = false;
             // 
-            // button9
+            // btnMakePrescript
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button9.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.Maroon;
-            this.button9.Location = new System.Drawing.Point(434, 581);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(168, 33);
-            this.button9.TabIndex = 16;
-            this.button9.Text = "Make Prescription";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnMakePrescript.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnMakePrescript.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMakePrescript.ForeColor = System.Drawing.Color.Maroon;
+            this.btnMakePrescript.Location = new System.Drawing.Point(434, 581);
+            this.btnMakePrescript.Name = "btnMakePrescript";
+            this.btnMakePrescript.Size = new System.Drawing.Size(168, 33);
+            this.btnMakePrescript.TabIndex = 16;
+            this.btnMakePrescript.Text = "Make Prescription";
+            this.btnMakePrescript.UseVisualStyleBackColor = false;
+            this.btnMakePrescript.Click += new System.EventHandler(this.btnMakePrescript_Click);
             // 
-            // dataGridView1
+            // dataGrid_checkAppoint
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(119, 74);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(838, 416);
-            this.dataGridView1.TabIndex = 15;
+            this.dataGrid_checkAppoint.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid_checkAppoint.Location = new System.Drawing.Point(119, 74);
+            this.dataGrid_checkAppoint.Name = "dataGrid_checkAppoint";
+            this.dataGrid_checkAppoint.Size = new System.Drawing.Size(838, 416);
+            this.dataGrid_checkAppoint.TabIndex = 15;
+            this.dataGrid_checkAppoint.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_checkAppoint_CellContentClick);
             // 
             // button7
             // 
@@ -692,7 +695,6 @@
             this.tbPgWelcome.Controls.Add(this.btnExit);
             this.tbPgWelcome.Controls.Add(this.label8);
             this.tbPgWelcome.Controls.Add(this.pictureBox2);
-            this.tbPgWelcome.Controls.Add(this.lblDepartment);
             this.tbPgWelcome.Controls.Add(this.lblDocIDAndName);
             this.tbPgWelcome.Location = new System.Drawing.Point(4, 22);
             this.tbPgWelcome.Name = "tbPgWelcome";
@@ -700,7 +702,6 @@
             this.tbPgWelcome.Size = new System.Drawing.Size(1053, 645);
             this.tbPgWelcome.TabIndex = 0;
             this.tbPgWelcome.Text = "Welcome";
-            this.tbPgWelcome.Click += new System.EventHandler(this.tbPgWelcome_Click);
             // 
             // btnExit
             // 
@@ -735,17 +736,6 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // lblDepartment
-            // 
-            this.lblDepartment.AutoSize = true;
-            this.lblDepartment.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDepartment.ForeColor = System.Drawing.Color.Transparent;
-            this.lblDepartment.Location = new System.Drawing.Point(239, 363);
-            this.lblDepartment.Name = "lblDepartment";
-            this.lblDepartment.Size = new System.Drawing.Size(204, 22);
-            this.lblDepartment.TabIndex = 2;
-            this.lblDepartment.Text = "lblDisplay department name";
-            // 
             // lblDocIDAndName
             // 
             this.lblDocIDAndName.AutoSize = true;
@@ -757,17 +747,18 @@
             this.lblDocIDAndName.TabIndex = 1;
             this.lblDocIDAndName.Text = "lblDisplay DocID + NAME";
             // 
-            // tabControl2
+            // tabConDocActiv
             // 
-            this.tabControl2.Controls.Add(this.tbPgWelcome);
-            this.tabControl2.Controls.Add(this.tbPgAppoint);
-            this.tabControl2.Controls.Add(this.tbPgPrescript);
-            this.tabControl2.Controls.Add(this.tbPgOp);
-            this.tabControl2.Location = new System.Drawing.Point(12, 12);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1061, 671);
-            this.tabControl2.TabIndex = 14;
+            this.tabConDocActiv.Controls.Add(this.tbPgWelcome);
+            this.tabConDocActiv.Controls.Add(this.tbPgAppoint);
+            this.tabConDocActiv.Controls.Add(this.tbPgPrescript);
+            this.tabConDocActiv.Controls.Add(this.tbPgOp);
+            this.tabConDocActiv.Location = new System.Drawing.Point(12, 12);
+            this.tabConDocActiv.Name = "tabConDocActiv";
+            this.tabConDocActiv.SelectedIndex = 0;
+            this.tabConDocActiv.Size = new System.Drawing.Size(1061, 671);
+            this.tabConDocActiv.TabIndex = 14;
+            this.tabConDocActiv.SelectedIndexChanged += new System.EventHandler(this.selectedIndex);
             // 
             // Doctor_Activities
             // 
@@ -775,7 +766,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1134, 749);
-            this.Controls.Add(this.tabControl2);
+            this.Controls.Add(this.tabConDocActiv);
             this.Controls.Add(this.tabControl1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Doctor_Activities";
@@ -801,11 +792,11 @@
             this.groupONames.ResumeLayout(false);
             this.tbPgAppoint.ResumeLayout(false);
             this.tbPgAppoint.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid_checkAppoint)).EndInit();
             this.tbPgWelcome.ResumeLayout(false);
             this.tbPgWelcome.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tabControl2.ResumeLayout(false);
+            this.tabConDocActiv.ResumeLayout(false);
             this.ResumeLayout(false);
 
             }
@@ -848,18 +839,17 @@
 		private System.Windows.Forms.Button button8;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.TabPage tbPgAppoint;
-		private System.Windows.Forms.Label label17;
-		private System.Windows.Forms.Button button9;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.Label lblStorePatID;
+		private System.Windows.Forms.Button btnMakePrescript;
+		private System.Windows.Forms.DataGridView dataGrid_checkAppoint;
 		private System.Windows.Forms.Button button7;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.TabPage tbPgWelcome;
 		private System.Windows.Forms.Button btnExit;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.PictureBox pictureBox2;
-		private System.Windows.Forms.Label lblDepartment;
 		private System.Windows.Forms.Label lblDocIDAndName;
-		private System.Windows.Forms.TabControl tabControl2;
+		private System.Windows.Forms.TabControl tabConDocActiv;
 		private System.Windows.Forms.Label label20;
 		private System.Windows.Forms.TextBox txtReason;
 		private System.Windows.Forms.Label label19;

@@ -91,3 +91,6 @@ C:\Users\Onthatile Happy Arie\Documents\Flashpoint-Hospital-System-master\Flashp
 C:\Users\Onthatile Happy Arie\Documents\Flashpoint-Hospital-System-master\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.exe
 C:\Users\Onthatile Happy Arie\Documents\Flashpoint-Hospital-System-master\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.pdb
 C:\Users\Onthatile Happy Arie\Documents\Flashpoint-Hospital-System-master\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Add_Drugs.resources
+C:\Users\Ma3M0 Y24 Tumelo\Documents\Databases I\Project\Application\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Ma3M0 Y24 Tumelo\Documents\Databases I\Project\Application\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Google.Protobuf.xml
+C:\Users\Ma3M0 Y24 Tumelo\Documents\Databases I\Project\Application\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Add_Drugs.resources
