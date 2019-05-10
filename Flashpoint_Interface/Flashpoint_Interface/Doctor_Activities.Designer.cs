@@ -49,7 +49,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.tbPgOp = new System.Windows.Forms.TabPage();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.Patient_Report_DerivedFrom_MakePrescription = new System.Windows.Forms.ListBox();
             this.button10 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
@@ -63,12 +63,9 @@
             this.label19 = new System.Windows.Forms.Label();
             this.txtSigna = new System.Windows.Forms.TextBox();
             this.txtSuperscription = new System.Windows.Forms.TextBox();
-            this.txtCredentials = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.groupONames = new System.Windows.Forms.GroupBox();
             this.Operations_and_Procedures = new System.Windows.Forms.ListBox();
             this.cmbDrugs = new System.Windows.Forms.ComboBox();
-            this.chkOperation = new System.Windows.Forms.CheckBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -87,6 +84,7 @@
             this.lblDocIDAndName = new System.Windows.Forms.Label();
             this.tabConDocActiv = new System.Windows.Forms.TabControl();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnReferToOperate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -330,7 +328,7 @@
             // tbPgOp
             // 
             this.tbPgOp.BackColor = System.Drawing.Color.Teal;
-            this.tbPgOp.Controls.Add(this.button12);
+            this.tbPgOp.Controls.Add(this.btnBack);
             this.tbPgOp.Controls.Add(this.Patient_Report_DerivedFrom_MakePrescription);
             this.tbPgOp.Controls.Add(this.button10);
             this.tbPgOp.Controls.Add(this.label14);
@@ -341,17 +339,17 @@
             this.tbPgOp.TabIndex = 4;
             this.tbPgOp.Text = "Operations";
             // 
-            // button12
+            // btnBack
             // 
-            this.button12.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button12.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.Maroon;
-            this.button12.Location = new System.Drawing.Point(0, 476);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(87, 35);
-            this.button12.TabIndex = 15;
-            this.button12.Text = "Back";
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnBack.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnBack.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.Maroon;
+            this.btnBack.Location = new System.Drawing.Point(6, 604);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(87, 35);
+            this.btnBack.TabIndex = 15;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
             // Patient_Report_DerivedFrom_MakePrescription
             // 
@@ -366,7 +364,7 @@
             this.button10.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button10.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(660, 0);
+            this.button10.Location = new System.Drawing.Point(960, 10);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(87, 35);
             this.button10.TabIndex = 13;
@@ -380,13 +378,14 @@
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(109, 3);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(436, 42);
+            this.label14.Size = new System.Drawing.Size(259, 42);
             this.label14.TabIndex = 0;
-            this.label14.Text = "Operation Referals";
+            this.label14.Text = "Operations";
             // 
             // tbPgPrescript
             // 
             this.tbPgPrescript.BackColor = System.Drawing.Color.Teal;
+            this.tbPgPrescript.Controls.Add(this.btnReferToOperate);
             this.tbPgPrescript.Controls.Add(this.btnSubmit);
             this.tbPgPrescript.Controls.Add(this.groupDrugs);
             this.tbPgPrescript.Controls.Add(this.btnConfirm);
@@ -395,11 +394,8 @@
             this.tbPgPrescript.Controls.Add(this.label19);
             this.tbPgPrescript.Controls.Add(this.txtSigna);
             this.tbPgPrescript.Controls.Add(this.txtSuperscription);
-            this.tbPgPrescript.Controls.Add(this.txtCredentials);
-            this.tbPgPrescript.Controls.Add(this.label18);
             this.tbPgPrescript.Controls.Add(this.groupONames);
             this.tbPgPrescript.Controls.Add(this.cmbDrugs);
-            this.tbPgPrescript.Controls.Add(this.chkOperation);
             this.tbPgPrescript.Controls.Add(this.label16);
             this.tbPgPrescript.Controls.Add(this.label15);
             this.tbPgPrescript.Controls.Add(this.label13);
@@ -450,9 +446,9 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(294, 293);
+            this.btnConfirm.Location = new System.Drawing.Point(281, 293);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirm.Size = new System.Drawing.Size(101, 23);
             this.btnConfirm.TabIndex = 32;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
@@ -472,7 +468,7 @@
             // 
             this.txtReason.Location = new System.Drawing.Point(171, 215);
             this.txtReason.Name = "txtReason";
-            this.txtReason.Size = new System.Drawing.Size(200, 20);
+            this.txtReason.Size = new System.Drawing.Size(211, 20);
             this.txtReason.TabIndex = 30;
             // 
             // label19
@@ -489,32 +485,15 @@
             // 
             this.txtSigna.Location = new System.Drawing.Point(171, 248);
             this.txtSigna.Name = "txtSigna";
-            this.txtSigna.Size = new System.Drawing.Size(200, 20);
+            this.txtSigna.Size = new System.Drawing.Size(211, 20);
             this.txtSigna.TabIndex = 28;
             // 
             // txtSuperscription
             // 
             this.txtSuperscription.Location = new System.Drawing.Point(195, 105);
             this.txtSuperscription.Name = "txtSuperscription";
-            this.txtSuperscription.Size = new System.Drawing.Size(176, 20);
+            this.txtSuperscription.Size = new System.Drawing.Size(187, 20);
             this.txtSuperscription.TabIndex = 27;
-            // 
-            // txtCredentials
-            // 
-            this.txtCredentials.Location = new System.Drawing.Point(202, 608);
-            this.txtCredentials.Name = "txtCredentials";
-            this.txtCredentials.Size = new System.Drawing.Size(180, 20);
-            this.txtCredentials.TabIndex = 25;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(36, 608);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(139, 18);
-            this.label18.TabIndex = 24;
-            this.label18.Text = "Doctor\'s Credentials :";
             // 
             // groupONames
             // 
@@ -547,20 +526,8 @@
             "etc."});
             this.cmbDrugs.Location = new System.Drawing.Point(171, 179);
             this.cmbDrugs.Name = "cmbDrugs";
-            this.cmbDrugs.Size = new System.Drawing.Size(198, 21);
+            this.cmbDrugs.Size = new System.Drawing.Size(211, 21);
             this.cmbDrugs.TabIndex = 21;
-            // 
-            // chkOperation
-            // 
-            this.chkOperation.AutoSize = true;
-            this.chkOperation.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkOperation.Location = new System.Drawing.Point(39, 565);
-            this.chkOperation.Name = "chkOperation";
-            this.chkOperation.Size = new System.Drawing.Size(183, 22);
-            this.chkOperation.TabIndex = 19;
-            this.chkOperation.Text = "Operation Granted (Y/N)";
-            this.chkOperation.UseVisualStyleBackColor = true;
-            this.chkOperation.Visible = false;
             // 
             // label16
             // 
@@ -760,6 +727,18 @@
             this.tabConDocActiv.TabIndex = 14;
             this.tabConDocActiv.SelectedIndexChanged += new System.EventHandler(this.selectedIndex);
             // 
+            // btnReferToOperate
+            // 
+            this.btnReferToOperate.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnReferToOperate.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReferToOperate.ForeColor = System.Drawing.Color.Maroon;
+            this.btnReferToOperate.Location = new System.Drawing.Point(29, 596);
+            this.btnReferToOperate.Name = "btnReferToOperate";
+            this.btnReferToOperate.Size = new System.Drawing.Size(159, 30);
+            this.btnReferToOperate.TabIndex = 34;
+            this.btnReferToOperate.Text = "Refer to Operate";
+            this.btnReferToOperate.UseVisualStyleBackColor = false;
+            // 
             // Doctor_Activities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -822,17 +801,14 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.TabPage tbPgOp;
-		private System.Windows.Forms.Button button12;
+		private System.Windows.Forms.Button btnBack;
 		private System.Windows.Forms.ListBox Patient_Report_DerivedFrom_MakePrescription;
 		private System.Windows.Forms.Button button10;
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.TabPage tbPgPrescript;
-		private System.Windows.Forms.TextBox txtCredentials;
-		private System.Windows.Forms.Label label18;
 		private System.Windows.Forms.GroupBox groupONames;
 		private System.Windows.Forms.ListBox Operations_and_Procedures;
 		private System.Windows.Forms.ComboBox cmbDrugs;
-		private System.Windows.Forms.CheckBox chkOperation;
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.Label label13;
@@ -860,5 +836,6 @@
 		private System.Windows.Forms.GroupBox groupDrugs;
 		private System.Windows.Forms.ListBox listBox1;
 		private System.Windows.Forms.Button btnConfirm;
-	}
+        private System.Windows.Forms.Button btnReferToOperate;
+    }
     }
