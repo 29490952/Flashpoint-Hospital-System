@@ -115,3 +115,4 @@ C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-H
 C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.csproj.GenerateResource.Cache
 C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.exe
 C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.pdb
+C:\Users\Ma3M0 Y24 Tumelo\Documents\Databases I\Project\Application\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.exe.config

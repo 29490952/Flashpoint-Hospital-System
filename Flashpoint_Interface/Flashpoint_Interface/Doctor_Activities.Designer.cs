@@ -69,6 +69,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.tbPgPrescript = new System.Windows.Forms.TabPage();
+            this.rtxtSigna = new System.Windows.Forms.RichTextBox();
             this.rtxtReason = new System.Windows.Forms.RichTextBox();
             this.rtxtSubscript = new System.Windows.Forms.RichTextBox();
             this.btnReferToOperate = new System.Windows.Forms.Button();
@@ -97,7 +98,6 @@
             this.lblDocIDAndName = new System.Windows.Forms.Label();
             this.tabConDocActiv = new System.Windows.Forms.TabControl();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.rtxtSigna = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -370,7 +370,7 @@
             // 
             // rtxtOpDescript
             // 
-            this.rtxtOpDescript.Location = new System.Drawing.Point(152, 373);
+            this.rtxtOpDescript.Location = new System.Drawing.Point(228, 373);
             this.rtxtOpDescript.Name = "rtxtOpDescript";
             this.rtxtOpDescript.Size = new System.Drawing.Size(209, 50);
             this.rtxtOpDescript.TabIndex = 37;
@@ -378,14 +378,14 @@
             // 
             // txtPostOpCon
             // 
-            this.txtPostOpCon.Location = new System.Drawing.Point(152, 229);
+            this.txtPostOpCon.Location = new System.Drawing.Point(230, 232);
             this.txtPostOpCon.Name = "txtPostOpCon";
             this.txtPostOpCon.Size = new System.Drawing.Size(207, 24);
             this.txtPostOpCon.TabIndex = 36;
             // 
             // rtxtDocsInvolved
             // 
-            this.rtxtDocsInvolved.Location = new System.Drawing.Point(155, 128);
+            this.rtxtDocsInvolved.Location = new System.Drawing.Point(230, 121);
             this.rtxtDocsInvolved.Name = "rtxtDocsInvolved";
             this.rtxtDocsInvolved.Size = new System.Drawing.Size(204, 44);
             this.rtxtDocsInvolved.TabIndex = 35;
@@ -394,7 +394,7 @@
             // cmbDepID
             // 
             this.cmbDepID.FormattingEnabled = true;
-            this.cmbDepID.Location = new System.Drawing.Point(154, 77);
+            this.cmbDepID.Location = new System.Drawing.Point(229, 78);
             this.cmbDepID.Name = "cmbDepID";
             this.cmbDepID.Size = new System.Drawing.Size(205, 25);
             this.cmbDepID.TabIndex = 34;
@@ -412,7 +412,7 @@
             // 
             // txtStartTime
             // 
-            this.txtStartTime.Location = new System.Drawing.Point(152, 278);
+            this.txtStartTime.Location = new System.Drawing.Point(230, 286);
             this.txtStartTime.Name = "txtStartTime";
             this.txtStartTime.Size = new System.Drawing.Size(207, 24);
             this.txtStartTime.TabIndex = 32;
@@ -420,17 +420,17 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label25.Location = new System.Drawing.Point(3, 376);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(131, 17);
+            this.label25.Size = new System.Drawing.Size(181, 22);
             this.label25.TabIndex = 31;
             this.label25.Text = "Operation Description:";
             // 
             // txtEndTime
             // 
-            this.txtEndTime.Location = new System.Drawing.Point(152, 328);
+            this.txtEndTime.Location = new System.Drawing.Point(229, 336);
             this.txtEndTime.Name = "txtEndTime";
             this.txtEndTime.Size = new System.Drawing.Size(209, 24);
             this.txtEndTime.TabIndex = 29;
@@ -438,50 +438,50 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label24.Location = new System.Drawing.Point(6, 336);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(64, 17);
+            this.label24.Size = new System.Drawing.Size(87, 22);
             this.label24.TabIndex = 28;
             this.label24.Text = "End Time:";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label23.Location = new System.Drawing.Point(3, 285);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(69, 17);
+            this.label23.Size = new System.Drawing.Size(94, 22);
             this.label23.TabIndex = 26;
             this.label23.Text = "Start Time:";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label22.Location = new System.Drawing.Point(0, 232);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(151, 17);
+            this.label22.Size = new System.Drawing.Size(207, 22);
             this.label22.TabIndex = 24;
             this.label22.Text = "Post-Operation Condition:";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label21.Location = new System.Drawing.Point(0, 189);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(146, 17);
+            this.label21.Size = new System.Drawing.Size(200, 22);
             this.label21.TabIndex = 22;
             this.label21.Text = "Pre-Operation Condition:";
             // 
             // txtPreOpCon
             // 
-            this.txtPreOpCon.Location = new System.Drawing.Point(154, 186);
+            this.txtPreOpCon.Location = new System.Drawing.Point(230, 190);
             this.txtPreOpCon.Name = "txtPreOpCon";
             this.txtPreOpCon.Size = new System.Drawing.Size(207, 24);
             this.txtPreOpCon.TabIndex = 21;
@@ -489,22 +489,22 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label18.Location = new System.Drawing.Point(3, 131);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(101, 17);
+            this.label18.Size = new System.Drawing.Size(135, 22);
             this.label18.TabIndex = 20;
             this.label18.Text = "Doctor Involved:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label9.Location = new System.Drawing.Point(3, 77);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 17);
+            this.label9.Size = new System.Drawing.Size(128, 22);
             this.label9.TabIndex = 16;
             this.label9.Text = "Department ID:";
             // 
@@ -577,6 +577,14 @@
             this.tbPgPrescript.Size = new System.Drawing.Size(1053, 645);
             this.tbPgPrescript.TabIndex = 2;
             this.tbPgPrescript.Text = "Prescriptions";
+            // 
+            // rtxtSigna
+            // 
+            this.rtxtSigna.Location = new System.Drawing.Point(255, 378);
+            this.rtxtSigna.Name = "rtxtSigna";
+            this.rtxtSigna.Size = new System.Drawing.Size(277, 69);
+            this.rtxtSigna.TabIndex = 37;
+            this.rtxtSigna.Text = "";
             // 
             // rtxtReason
             // 
@@ -676,11 +684,6 @@
             // cmbDrugs
             // 
             this.cmbDrugs.FormattingEnabled = true;
-            this.cmbDrugs.Items.AddRange(new object[] {
-            "Panado",
-            "GrandPa",
-            "Allegex",
-            "etc."});
             this.cmbDrugs.Location = new System.Drawing.Point(255, 117);
             this.cmbDrugs.Name = "cmbDrugs";
             this.cmbDrugs.Size = new System.Drawing.Size(211, 21);
@@ -882,14 +885,6 @@
             this.tabConDocActiv.Size = new System.Drawing.Size(1061, 671);
             this.tabConDocActiv.TabIndex = 14;
             this.tabConDocActiv.SelectedIndexChanged += new System.EventHandler(this.selectedIndex);
-            // 
-            // rtxtSigna
-            // 
-            this.rtxtSigna.Location = new System.Drawing.Point(255, 378);
-            this.rtxtSigna.Name = "rtxtSigna";
-            this.rtxtSigna.Size = new System.Drawing.Size(277, 69);
-            this.rtxtSigna.TabIndex = 37;
-            this.rtxtSigna.Text = "";
             // 
             // Doctor_Activities
             // 

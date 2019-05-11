@@ -32,6 +32,22 @@ namespace Flashpoint_Interface
         private void Doctor_Activities_Load(object sender, EventArgs e)
         {
             lblDocIDAndName.Text = "Welcome Doctor " + docName + " " + docSurname;
+
+            sqlConn.Open();
+            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM department", sqlConn);
+            DataSet ds = new DataSet();
+            adapter.Fill(ds, "department");
+
+            DataTable dt = ds.Tables["department"];
+
+            if (cmbDepID.Items.Count <= 1)
+            {
+                foreach (DataRow dr in dt.Rows)
+                {
+                    cmbDepID.Items.Add(dr["departName"].ToString());
+                }
+            }
+            sqlConn.Close();
         }
         private void btnSubmit_Click(object sender, EventArgs e)
         {
@@ -48,11 +64,12 @@ namespace Flashpoint_Interface
                 Random rnd = new Random();
                 int prescriptionID = rnd.Next(10000000, 99999999);
 
+                sqlConn.Open();
                 string inputString = "call sp_MakePresciption('" + prescriptionID + "', '" + patientID + "','" + docID + "','" + vDrugs + "','" + vPrescribedTime + "','" + vPurpose + "','" + vSubscript + "','" + vSigna + "' )";
                 MySqlCommand command = new MySqlCommand(inputString, sqlConn);
 
                 MessageBox.Show("command == INSERT Successful ");
-
+                sqlConn.Close();
             }
             catch(MySqlException ex)
             {
@@ -88,12 +105,21 @@ namespace Flashpoint_Interface
             tabConDocActiv.SelectedIndex = 2;
         }
 
-	    private void btnRecordOp_Click(object sender, EventArgs e)
+        string deptID = "";
+        private void btnRecordOp_Click(object sender, EventArgs e)
 	    {
             Random random = new Random();
 		    lstPatient_Report_DerivedFrom_MakePrescription.Visible = true;
 
-		    string deptID = cmbDepID.SelectedValue.ToString();
+            sqlConn.Open();
+            MySqlCommand departCmd = new MySqlCommand("SELECT departID FROM department WHERE departName = '"+ cmbDepID.SelectedValue + "'", sqlConn);
+            MySqlDataReader dr = departCmd.ExecuteReader();
+            if(dr.Read())
+            {
+                deptID = dr["departID"].ToString();
+            }
+            sqlConn.Close();
+
 		    string docInvolved = rtxtDocsInvolved.Text;
 		    string opPreCondition = txtPreOpCon.Text;
 		    string opPostCondition = txtPostOpCon.Text;
@@ -101,16 +127,13 @@ namespace Flashpoint_Interface
 		    string opEndTime = txtEndTime.Text;
 		    string opDescription = rtxtOpDescript.Text;
 
+            sqlConn.Open();
             admissionID = random.Next(00000000, 99999999).ToString();
             MySqlCommand cmd = new MySqlCommand("CALL sp_RecordOperation('"+deptID+"', '"+admissionID+"', '"+ docInvolved + "', " +
                                             "'"+ opPreCondition + "', '"+ opPostCondition + "', '"+ opStartTime + "', '"+ opEndTime + "'," +
                                             " '"+ opDescription + "')", sqlConn);
+            sqlConn.Close();
 	    }
-        
-        private void btnReferToOperate_Click(object sender, EventArgs e)
-        {
-            tabConDocActiv.SelectedIndex = 3;
-        }
 
         private void dataGrid_checkAppoint_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -121,6 +144,12 @@ namespace Flashpoint_Interface
 
             patientID = row.Cells[8].Value.ToString();
         }
+
+        private void btnReferToOperate_Click(object sender, EventArgs e)
+        {
+            tabConDocActiv.SelectedIndex = 3;
+        }
+
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             groupDrugs.Visible = true;
