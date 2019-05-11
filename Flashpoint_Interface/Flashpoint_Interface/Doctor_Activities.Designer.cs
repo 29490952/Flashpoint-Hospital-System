@@ -585,6 +585,7 @@
 			this.btnReferToOperate.TabIndex = 34;
 			this.btnReferToOperate.Text = "Refer to Operate";
 			this.btnReferToOperate.UseVisualStyleBackColor = false;
+			this.btnReferToOperate.Click += new System.EventHandler(this.btnReferToOperate_Click);
 			// 
 			// btnSubmit
 			// 

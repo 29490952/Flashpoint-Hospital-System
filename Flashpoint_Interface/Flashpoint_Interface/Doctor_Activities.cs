@@ -18,7 +18,7 @@
             MySqlConnection sqlConn = new MySqlConnection();
         
             //VARIABLES 
-            string docID, docName, docSurname, patientID;
+            string docID, docName, docSurname, patientID,admissionID,operationID;
             public Doctor_Activities(MySqlConnection connSql, string DocID, string DocName, string DocSurname)
             {
                 InitializeComponent();
@@ -73,6 +73,8 @@
 		private void btnDisplay_Click(object sender, EventArgs e)
 		{
 			lstPatient_Report_DerivedFrom_MakePrescription.Visible = true;
+			
+
 
 			string deptID = txtDeptID.Text;
 			string docInvolved = txtInvoved.Text;
@@ -81,6 +83,15 @@
 			string opStartTime = txtStartTime.Text;
 			string opEndTime = txtEndTime.Text;
 			string opDescription = txtODescription.Text;
+
+			string inputString = "call sp_RecordOperation('" + operationID + "','" + deptID+ "','" + admissionID + "','" + docInvolved + "','" + opPreCondition + "','" + opPostCondition + "','" +opStartTime+ "','"+opEndTime+"','"+opDescription+"')";
+			MySqlCommand command = new MySqlCommand(inputString, sqlConn);
+
+
+		}
+
+		private void btnReferToOperate_Click(object sender, EventArgs e)
+		{
 
 		}
 
