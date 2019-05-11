@@ -50,9 +50,10 @@ namespace Flashpoint_Interface
         private void btnViewPres_Click(object sender, EventArgs e)
         {
             PresTab.Show();
+            sqlConn.Open();
             try
             {
-                sqlConn.Open();
+                
 
                 MySqlDataAdapter adapter = new MySqlDataAdapter("CALL ph_Access_Prescriptions('" + txtPatID + "')", sqlConn);
                 DataSet ds = new DataSet();
@@ -114,7 +115,7 @@ namespace Flashpoint_Interface
         {
             try
             {
-                tabConPharmacy.SelectedIndex = 1;
+               
                 //if(!(txtUserID.Text == string.Empty))
                 //{
                 //    if(!(txtPassword.Text == string.Empty))
@@ -148,7 +149,7 @@ namespace Flashpoint_Interface
                 //        }
                 //    }
                 //}
-                //sqlConn.Close();
+                sqlConn.Close();
             }
             catch(Exception es)
             {
@@ -161,8 +162,8 @@ namespace Flashpoint_Interface
         {
             PresTab.Hide();
             DrugsTab.Hide();
-            tabConPharmacy.TabPages.Remove(PresTab);
-            tabConPharmacy.TabPages.Remove(DrugsTab);
+            tabControl1.TabPages.Remove(PresTab);
+            tabControl1.TabPages.Remove(DrugsTab);
 
         }
 

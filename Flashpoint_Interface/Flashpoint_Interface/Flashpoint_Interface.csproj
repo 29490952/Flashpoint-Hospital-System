@@ -41,10 +41,7 @@
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.15\lib\net452\MySql.Data.dll</HintPath>
-<<<<<<< HEAD
-=======
       <Private>True</Private>
->>>>>>> 2f7d125b8edb08f82aeda732645b20e8c0c19538
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel" />
