@@ -241,6 +241,7 @@
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Homepage";
             this.tabHome.UseVisualStyleBackColor = true;
+            this.tabHome.Click += new System.EventHandler(this.tabHome_Click);
             // 
             // grbSearchAppointment
             // 
@@ -251,6 +252,7 @@
             this.grbSearchAppointment.Size = new System.Drawing.Size(355, 49);
             this.grbSearchAppointment.TabIndex = 9;
             this.grbSearchAppointment.TabStop = false;
+            this.grbSearchAppointment.Visible = false;
             // 
             // txtSearchAppoint
             // 
@@ -276,27 +278,29 @@
             this.grpDeleteAppointment.Controls.Add(this.btnDeleteAppoint);
             this.grpDeleteAppointment.Controls.Add(this.txtDeleteAppointID);
             this.grpDeleteAppointment.Controls.Add(this.label47);
-            this.grpDeleteAppointment.Location = new System.Drawing.Point(295, 451);
+            this.grpDeleteAppointment.Location = new System.Drawing.Point(655, 26);
             this.grpDeleteAppointment.Name = "grpDeleteAppointment";
-            this.grpDeleteAppointment.Size = new System.Drawing.Size(331, 138);
+            this.grpDeleteAppointment.Size = new System.Drawing.Size(378, 208);
             this.grpDeleteAppointment.TabIndex = 8;
             this.grpDeleteAppointment.TabStop = false;
             this.grpDeleteAppointment.Text = "Delete Appointment";
+            this.grpDeleteAppointment.Visible = false;
+            this.grpDeleteAppointment.Enter += new System.EventHandler(this.grpDeleteAppointment_Enter);
             // 
             // btnCancelDeleteAppoint
             // 
-            this.btnCancelDeleteAppoint.Location = new System.Drawing.Point(189, 71);
+            this.btnCancelDeleteAppoint.Location = new System.Drawing.Point(216, 121);
             this.btnCancelDeleteAppoint.Name = "btnCancelDeleteAppoint";
-            this.btnCancelDeleteAppoint.Size = new System.Drawing.Size(136, 32);
+            this.btnCancelDeleteAppoint.Size = new System.Drawing.Size(156, 32);
             this.btnCancelDeleteAppoint.TabIndex = 7;
             this.btnCancelDeleteAppoint.Text = "Cancel";
             this.btnCancelDeleteAppoint.UseVisualStyleBackColor = true;
             // 
             // btnDeleteAppoint
             // 
-            this.btnDeleteAppoint.Location = new System.Drawing.Point(12, 71);
+            this.btnDeleteAppoint.Location = new System.Drawing.Point(6, 121);
             this.btnDeleteAppoint.Name = "btnDeleteAppoint";
-            this.btnDeleteAppoint.Size = new System.Drawing.Size(96, 32);
+            this.btnDeleteAppoint.Size = new System.Drawing.Size(156, 32);
             this.btnDeleteAppoint.TabIndex = 6;
             this.btnDeleteAppoint.Text = "Delete";
             this.btnDeleteAppoint.UseVisualStyleBackColor = true;
@@ -304,17 +308,18 @@
             // 
             // txtDeleteAppointID
             // 
-            this.txtDeleteAppointID.Location = new System.Drawing.Point(145, 22);
+            this.txtDeleteAppointID.Location = new System.Drawing.Point(148, 31);
             this.txtDeleteAppointID.Name = "txtDeleteAppointID";
-            this.txtDeleteAppointID.Size = new System.Drawing.Size(168, 25);
+            this.txtDeleteAppointID.Size = new System.Drawing.Size(224, 25);
             this.txtDeleteAppointID.TabIndex = 3;
             // 
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(9, 25);
+            this.label47.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(4, 32);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(117, 18);
+            this.label47.Size = new System.Drawing.Size(148, 24);
             this.label47.TabIndex = 0;
             this.label47.Text = "Appointment ID";
             // 
@@ -339,6 +344,7 @@
             this.grpAddAppointment.TabIndex = 3;
             this.grpAddAppointment.TabStop = false;
             this.grpAddAppointment.Text = "Add New Appointment";
+            this.grpAddAppointment.Visible = false;
             // 
             // label64
             // 
@@ -381,6 +387,7 @@
             this.btnAppointCancel.TabIndex = 7;
             this.btnAppointCancel.Text = "Cancel";
             this.btnAppointCancel.UseVisualStyleBackColor = true;
+            this.btnAppointCancel.Click += new System.EventHandler(this.btnAppointCancel_Click);
             // 
             // btnAppointSave
             // 
@@ -395,7 +402,7 @@
             // txtAppointdate
             // 
             this.txtAppointdate.Location = new System.Drawing.Point(145, 168);
-            this.txtAppointdate.MaxLength = 8;
+            this.txtAppointdate.MaxLength = 12;
             this.txtAppointdate.Name = "txtAppointdate";
             this.txtAppointdate.Size = new System.Drawing.Size(168, 25);
             this.txtAppointdate.TabIndex = 5;
@@ -406,6 +413,7 @@
             this.txtNewAppointPatientID.Name = "txtNewAppointPatientID";
             this.txtNewAppointPatientID.Size = new System.Drawing.Size(168, 25);
             this.txtNewAppointPatientID.TabIndex = 3;
+            this.txtNewAppointPatientID.TextChanged += new System.EventHandler(this.txtNewAppointPatientID_TextChanged);
             // 
             // label44
             // 

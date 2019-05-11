@@ -96,15 +96,13 @@ namespace Flashpoint_Interface
         private void btnAppointSave_Click(object sender, EventArgs e)
         {
 
-
-
-            string sqlString = "CALL sp_MakeAppointment('" + GenerateAppointID() + "','" + txtNewAppointPatientID.Text + "','" + cmbNewAppointDepart.SelectedText + "','" + cmbAppointDoctor.SelectedText + "','" + txtAppointdate.Text + "','" + txtAppointTime.Text + "')";
+            string sqlString = "CALL sp_MakeAppointment('" + GenerateAppointID() + "','" + txtNewAppointPatientID.Text + "','" + cmbNewAppointDepart.SelectedValue.ToString() + "','" + cmbAppointDoctor.SelectedValue.ToString() + "','" + txtAppointdate.Text + "','" + txtAppointTime.Text + "')";
 
             //Executing the insert command
             try
             {
-                MySqlCommand cmd = new MySqlCommand(sqlString, sqlConn);
-                cmd.ExecuteNonQuery();
+                MySqlCommand cmd1 = new MySqlCommand(sqlString, sqlConn);
+                cmd1.ExecuteNonQuery();
                 MessageBox.Show("Appointment added. ");
             }
 
@@ -112,16 +110,15 @@ namespace Flashpoint_Interface
             {
                 MessageBox.Show(er.Message);
             }
+
+
         }
 
         public int GenerateAppointID()
         {
-
-
-            DateTime today = DateTime.Today;
-
-            int appointid = number + Convert.ToInt16(today);
-            number++;
+            Random rand = new Random();
+            int appointid = rand.Next(10000000, 99999999);
+           
 
             return appointid;
         }
@@ -148,11 +145,14 @@ namespace Flashpoint_Interface
 
         private void addNewAppointmentToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            cmbAppointDoctor.SelectedItem = null;
+            cmbNewAppointDepart.SelectedItem = null;
             grpAddAppointment.Visible = true;
             grpDeleteAppointment.Visible = false;
             grpSeachResults.Visible = false;
+            string thetext = "doctor";
 
-            string sqlString = "CALL sp_SelectDistinctDoctor";
+            string sqlString = "CALL sp_SelectDistinctDoctor('" + thetext + "')";
 
             //ACTUALLY CHECKING DATABASE
             MySqlCommand cmd = new MySqlCommand(sqlString, sqlConn);
@@ -164,8 +164,8 @@ namespace Flashpoint_Interface
                 MySqlDataAdapter adapter = new MySqlDataAdapter(sqlString, sqlConn);
 
                 adapter.Fill(ds, "doctor");
-                cmbAppointDoctor.ValueMember = "docID";
-                cmbAppointDoctor.DisplayMember = "docID";
+                cmbAppointDoctor.ValueMember = "staffID";
+                cmbAppointDoctor.DisplayMember = "staffID";
                 cmbAppointDoctor.DataSource = ds.Tables["doctor"];
                 
             }
@@ -173,8 +173,9 @@ namespace Flashpoint_Interface
             {
                 MessageBox.Show(er.Message);
             }
+            
             //POPULATING DEPARTMENT COMBOBOX
-            string sqlString2 = "CALL sp_SelectDistinctDepartment";
+            string sqlString2 = "CALL sp_SelectDistinctDoctor('" + "department" + "')";
 
             //ACTUALLY CHECKING DATABASE
             MySqlCommand cmdc = new MySqlCommand(sqlString2, sqlConn);
@@ -183,12 +184,12 @@ namespace Flashpoint_Interface
                 //Displaying the apointments 
                 DataSet ds = new DataSet();
                 cmdc.CommandType = CommandType.StoredProcedure;
-                MySqlDataAdapter adapter = new MySqlDataAdapter(sqlString, sqlConn);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(sqlString2, sqlConn);
 
                 adapter.Fill(ds, "department");
                 cmbNewAppointDepart.ValueMember = "departID";
                 cmbNewAppointDepart.DisplayMember = "departID";
-               cmbNewAppointDepart.DataSource = ds.Tables["department"];
+                cmbNewAppointDepart.DataSource = ds.Tables["department"];
 
             }
             catch (MySqlException er)
@@ -211,6 +212,52 @@ namespace Flashpoint_Interface
             grpDeleteAppointment.Visible = false;
             grpAddAppointment.Visible = false;
 
+        }
+
+        private void grpDeleteAppointment_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNewAppointPatientID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAppointCancel_Click(object sender, EventArgs e)
+        {
+            txtNewAppointPatientID.Clear();
+            txtAppointdate.Clear();
+            txtAppointTime.Clear();
+            grpAddAppointment.Visible = false;
+        }
+
+        private void tabHome_Click(object sender, EventArgs e)
+        {
+            //RELOADING THE DATAGRID TO DISPLAY NEW APPOINTMENT
+            sqlConn = new MySqlConnection(myConnString);
+            sqlConn.Open();
+            string mytext = "all";
+            string sqlString2 = "CALL sp_PatientAppointment('" + mytext + "')";
+
+            //ACTUALLY CHECKING DATABASE
+            MySqlCommand cmd = new MySqlCommand(sqlString2, sqlConn);
+
+            try
+            {
+                //Displaying the apointments 
+                DataSet ds = new DataSet();
+                cmd.CommandType = CommandType.StoredProcedure;
+                MySqlDataAdapter adapter = new MySqlDataAdapter(sqlString2, sqlConn);
+
+                adapter.Fill(ds, "appointment");
+                dataGridDisplayAppoint.DataSource = ds;
+                dataGridDisplayAppoint.DataMember = "appointment";
+            }
+            catch (MySqlException er)
+            {
+                MessageBox.Show(er.Message);
+            }
         }
     }
 }
