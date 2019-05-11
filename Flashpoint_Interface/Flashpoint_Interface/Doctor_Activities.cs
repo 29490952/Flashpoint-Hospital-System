@@ -36,26 +36,7 @@
             }
             private void btnSubmit_Click(object sender, EventArgs e)
             {
-
-                string insertQuery = "INSERT INTO flashPointhospital_db(Superscription,listOfDrugs,therapeuticReason,signa,operationChecked,Credential) VALUES('" + txtSuperscription.Text + "','" + cmbDrugs.Text + "','" + txtReason.Text + "','" + txtSigna.Text + "','" + chkOperation.Checked + "','" + txtCredentials.Text + "',)";
-                sqlConn.Open();
-                MySqlCommand sqlCommand = new MySqlCommand(insertQuery, sqlConn);
-                try
-                {
-                    if (sqlCommand.ExecuteNonQuery() == 1)
-                    {
-                        MessageBox.Show("Data Inserted");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Data not Inserted");
-
-                    }
-                }
-                catch (MySqlException err)
-                {
-                    MessageBox.Show(err.Message);
-                }
+                
             }
             private void tbPgAppoint_Click(object sender, EventArgs e)
             {
@@ -101,7 +82,6 @@
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             groupDrugs.Visible = true;
-            chkOperation.Visible = true;
             groupONames.Visible = true;
             DateTime vPrescribedTime = new DateTime();
             vPrescribedTime = DateTime.Now;
@@ -117,6 +97,7 @@
             MySqlCommand command = new MySqlCommand(inputString,sqlConn);
 
             MessageBox.Show("command == INSERT Successful ");
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
