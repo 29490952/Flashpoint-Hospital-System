@@ -1,13 +1,13 @@
-﻿    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Data;
-    using System.Drawing;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.Windows.Forms;
-    using MySql.Data.MySqlClient;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 
 namespace Flashpoint_Interface
@@ -16,20 +16,12 @@ namespace Flashpoint_Interface
     {
         //SQL CONNECTION
         MySqlConnection sqlConn = new MySqlConnection();
-        
-<<<<<<< HEAD
-            //VARIABLES 
-            string docID, docName, docSurname, patientID,admissionID,operationID;
-            public Doctor_Activities(MySqlConnection connSql, string DocID, string DocName, string DocSurname)
-            {
-                InitializeComponent();
-=======
+
         //VARIABLES 
         string docID, docName, docSurname, patientID, admissionID;
         public Doctor_Activities(MySqlConnection connSql, string DocID, string DocName, string DocSurname)
         {
             InitializeComponent();
->>>>>>> 0a6bfcc56deb502e094b12b6c958c8b05bab269a
 
             sqlConn = connSql;
             docID = DocID;
@@ -73,13 +65,17 @@ namespace Flashpoint_Interface
                 int prescriptionID = rnd.Next(10000000, 99999999);
 
                 sqlConn.Open();
-                string inputString = "call sp_MakePresciption('" + prescriptionID + "', '" + patientID + "','" + docID + "','" + vDrugs + "','" + vPrescribedTime + "','" + vPurpose + "','" + vSubscript + "','" + vSigna + "' )";
+                string inputString = "call sp_MakePresciption('" + prescriptionID + "', '" + patientID + "','" + docID + "'," +
+                    "'" + vDrugs + "','" + vPrescribedTime + "','" + vPurpose + "','" + vSubscript + "','" + vSigna + "' )";
                 MySqlCommand command = new MySqlCommand(inputString, sqlConn);
 
                 MessageBox.Show("command == INSERT Successful ");
                 sqlConn.Close();
+
+                sqlConn.Open();
+                sqlConn.Close();
             }
-            catch(MySqlException ex)
+            catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -113,62 +109,35 @@ namespace Flashpoint_Interface
             tabConDocActiv.SelectedIndex = 2;
         }
 
-<<<<<<< HEAD
-		private void btnDisplay_Click(object sender, EventArgs e)
-		{
-			lstPatient_Report_DerivedFrom_MakePrescription.Visible = true;
-			
-
-
-			string deptID = txtDeptID.Text;
-			string docInvolved = txtInvoved.Text;
-			string opPreCondition = cmbPreCon.SelectedIndex.ToString();
-			string opPostCondition = cmbPostCon.SelectedIndex.ToString();
-			string opStartTime = txtStartTime.Text;
-			string opEndTime = txtEndTime.Text;
-			string opDescription = txtODescription.Text;
-
-			string inputString = "call sp_RecordOperation('" + operationID + "','" + deptID+ "','" + admissionID + "','" + docInvolved + "','" + opPreCondition + "','" + opPostCondition + "','" +opStartTime+ "','"+opEndTime+"','"+opDescription+"')";
-			MySqlCommand command = new MySqlCommand(inputString, sqlConn);
-
-
-		}
-
-		private void btnReferToOperate_Click(object sender, EventArgs e)
-		{
-
-		}
-=======
         string deptID = "";
         private void btnRecordOp_Click(object sender, EventArgs e)
-	    {
+        {
             Random random = new Random();
-		    lstPatient_Report_DerivedFrom_MakePrescription.Visible = true;
->>>>>>> 0a6bfcc56deb502e094b12b6c958c8b05bab269a
+            lstPatient_Report_DerivedFrom_MakePrescription.Visible = true;
 
             sqlConn.Open();
-            MySqlCommand departCmd = new MySqlCommand("SELECT departID FROM department WHERE departName = '"+ cmbDepID.SelectedValue + "'", sqlConn);
+            MySqlCommand departCmd = new MySqlCommand("SELECT departID FROM department WHERE departName = '" + cmbDepID.SelectedValue + "'", sqlConn);
             MySqlDataReader dr = departCmd.ExecuteReader();
-            if(dr.Read())
+            if (dr.Read())
             {
                 deptID = dr["departID"].ToString();
             }
             sqlConn.Close();
 
-		    string docInvolved = rtxtDocsInvolved.Text;
-		    string opPreCondition = txtPreOpCon.Text;
-		    string opPostCondition = txtPostOpCon.Text;
-		    string opStartTime = txtStartTime.Text;
-		    string opEndTime = txtEndTime.Text;
-		    string opDescription = rtxtOpDescript.Text;
+            string docInvolved = rtxtDocsInvolved.Text;
+            string opPreCondition = txtPreOpCon.Text;
+            string opPostCondition = txtPostOpCon.Text;
+            string opStartTime = txtStartTime.Text;
+            string opEndTime = txtEndTime.Text;
+            string opDescription = rtxtOpDescript.Text;
 
             sqlConn.Open();
             admissionID = random.Next(00000000, 99999999).ToString();
-            MySqlCommand cmd = new MySqlCommand("CALL sp_RecordOperation('"+deptID+"', '"+admissionID+"', '"+ docInvolved + "', " +
-                                            "'"+ opPreCondition + "', '"+ opPostCondition + "', '"+ opStartTime + "', '"+ opEndTime + "'," +
-                                            " '"+ opDescription + "')", sqlConn);
+            MySqlCommand cmd = new MySqlCommand("CALL sp_RecordOperation('" + deptID + "', '" + admissionID + "', '" + docInvolved + "', " +
+                                            "'" + opPreCondition + "', '" + opPostCondition + "', '" + opStartTime + "', '" + opEndTime + "'," +
+                                            " '" + opDescription + "')", sqlConn);
             sqlConn.Close();
-	    }
+        }
 
         private void dataGrid_checkAppoint_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
