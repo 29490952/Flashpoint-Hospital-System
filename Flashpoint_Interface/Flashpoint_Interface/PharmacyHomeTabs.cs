@@ -16,7 +16,7 @@ namespace Flashpoint_Interface
     public partial class PharmacyHomeTabs : Form
     {
         MySqlConnection sqlConn = new MySqlConnection();
-        string myConnString = "server=196.253.108.211; User ID=thato; Password=fL@$##0$P_db; Database=flashpointhospital_db;Sslmode=none";
+        string myConnString = "server=196.253.108.211; User ID=karabo; Password=fL@$##0$P_db; Database=flashpointhospital_db;Sslmode=none";
        
         public PharmacyHomeTabs()
         {
@@ -50,7 +50,7 @@ namespace Flashpoint_Interface
         private void btnViewPres_Click(object sender, EventArgs e)
         {
             PresTab.Show();
-            sqlConn.Open();
+            //sqlConn.Open();
             try
             {
                 
@@ -113,6 +113,8 @@ namespace Flashpoint_Interface
 
         private void button1_Click(object sender, EventArgs e)
         {
+            tabControl1.TabIndex = 2;
+
             try
             {
                
