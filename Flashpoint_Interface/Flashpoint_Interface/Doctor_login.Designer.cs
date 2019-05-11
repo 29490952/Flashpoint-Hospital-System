@@ -36,7 +36,6 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.cmbDepart = new System.Windows.Forms.ComboBox();
 			this.cmbOnCall = new System.Windows.Forms.ComboBox();
-			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.txtPassCode = new System.Windows.Forms.TextBox();
@@ -115,17 +114,6 @@
 			this.cmbOnCall.Size = new System.Drawing.Size(104, 21);
 			this.cmbOnCall.TabIndex = 8;
 			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(14, 353);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(117, 16);
-			this.label4.TabIndex = 9;
-			this.label4.Text = "e.g. If Yes(Show): >>>";
-			// 
 			// label5
 			// 
 			this.label5.AutoSize = true;
@@ -197,7 +185,6 @@
 			this.Controls.Add(this.txtPassCode);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.label5);
-			this.Controls.Add(this.label4);
 			this.Controls.Add(this.cmbOnCall);
 			this.Controls.Add(this.cmbDepart);
 			this.Controls.Add(this.label3);
@@ -222,7 +209,6 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.ComboBox cmbDepart;
 		private System.Windows.Forms.ComboBox cmbOnCall;
-		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.TextBox txtPassCode;

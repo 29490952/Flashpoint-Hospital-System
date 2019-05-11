@@ -39,11 +39,10 @@
             this.txtDeleteAppointID = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
             this.grpAddAppointment = new System.Windows.Forms.GroupBox();
-            this.txtNewAppointDepartmentID = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
             this.txtAppointTime = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
-            this.txtAppointDoctor = new System.Windows.Forms.ComboBox();
+            this.cmbAppointDoctor = new System.Windows.Forms.ComboBox();
             this.btnAppointCancel = new System.Windows.Forms.Button();
             this.btnAppointSave = new System.Windows.Forms.Button();
             this.txtAppointdate = new System.Windows.Forms.TextBox();
@@ -202,6 +201,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.grpExit = new System.Windows.Forms.GroupBox();
             this.btnExit2 = new System.Windows.Forms.Button();
             this.grpAdmission = new System.Windows.Forms.GroupBox();
@@ -226,6 +226,9 @@
             this.btnRoomAssign = new System.Windows.Forms.Button();
             this.grpExit2 = new System.Windows.Forms.GroupBox();
             this.btnExit3 = new System.Windows.Forms.Button();
+=======
+            this.cmbNewAppointDepart = new System.Windows.Forms.ComboBox();
+>>>>>>> 3254cb1f2e54fcdb07b592fdb59587a1bba416a2
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             this.grbSearchAppointment.SuspendLayout();
@@ -364,11 +367,11 @@
             // grpAddAppointment
             // 
             this.grpAddAppointment.BackColor = System.Drawing.Color.White;
-            this.grpAddAppointment.Controls.Add(this.txtNewAppointDepartmentID);
+            this.grpAddAppointment.Controls.Add(this.cmbNewAppointDepart);
             this.grpAddAppointment.Controls.Add(this.label64);
             this.grpAddAppointment.Controls.Add(this.txtAppointTime);
             this.grpAddAppointment.Controls.Add(this.label62);
-            this.grpAddAppointment.Controls.Add(this.txtAppointDoctor);
+            this.grpAddAppointment.Controls.Add(this.cmbAppointDoctor);
             this.grpAddAppointment.Controls.Add(this.btnAppointCancel);
             this.grpAddAppointment.Controls.Add(this.btnAppointSave);
             this.grpAddAppointment.Controls.Add(this.txtAppointdate);
@@ -382,13 +385,6 @@
             this.grpAddAppointment.TabIndex = 3;
             this.grpAddAppointment.TabStop = false;
             this.grpAddAppointment.Text = "Add New Appointment";
-            // 
-            // txtNewAppointDepartmentID
-            // 
-            this.txtNewAppointDepartmentID.Location = new System.Drawing.Point(145, 79);
-            this.txtNewAppointDepartmentID.Name = "txtNewAppointDepartmentID";
-            this.txtNewAppointDepartmentID.Size = new System.Drawing.Size(168, 25);
-            this.txtNewAppointDepartmentID.TabIndex = 12;
             // 
             // label64
             // 
@@ -415,13 +411,13 @@
             this.label62.TabIndex = 9;
             this.label62.Text = " Appointment time";
             // 
-            // txtAppointDoctor
+            // cmbAppointDoctor
             // 
-            this.txtAppointDoctor.FormattingEnabled = true;
-            this.txtAppointDoctor.Location = new System.Drawing.Point(145, 120);
-            this.txtAppointDoctor.Name = "txtAppointDoctor";
-            this.txtAppointDoctor.Size = new System.Drawing.Size(168, 26);
-            this.txtAppointDoctor.TabIndex = 8;
+            this.cmbAppointDoctor.FormattingEnabled = true;
+            this.cmbAppointDoctor.Location = new System.Drawing.Point(145, 120);
+            this.cmbAppointDoctor.Name = "cmbAppointDoctor";
+            this.cmbAppointDoctor.Size = new System.Drawing.Size(168, 26);
+            this.cmbAppointDoctor.TabIndex = 8;
             // 
             // btnAppointCancel
             // 
@@ -445,6 +441,7 @@
             // txtAppointdate
             // 
             this.txtAppointdate.Location = new System.Drawing.Point(145, 168);
+            this.txtAppointdate.MaxLength = 8;
             this.txtAppointdate.Name = "txtAppointdate";
             this.txtAppointdate.Size = new System.Drawing.Size(168, 25);
             this.txtAppointdate.TabIndex = 5;
@@ -518,18 +515,21 @@
             this.addNewAppointmentToolStripMenuItem.Name = "addNewAppointmentToolStripMenuItem";
             this.addNewAppointmentToolStripMenuItem.Size = new System.Drawing.Size(142, 20);
             this.addNewAppointmentToolStripMenuItem.Text = "Add New Appointment";
+            this.addNewAppointmentToolStripMenuItem.Click += new System.EventHandler(this.addNewAppointmentToolStripMenuItem_Click);
             // 
             // deleteAppointmentToolStripMenuItem
             // 
             this.deleteAppointmentToolStripMenuItem.Name = "deleteAppointmentToolStripMenuItem";
             this.deleteAppointmentToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
             this.deleteAppointmentToolStripMenuItem.Text = "Delete Appointment";
+            this.deleteAppointmentToolStripMenuItem.Click += new System.EventHandler(this.deleteAppointmentToolStripMenuItem_Click);
             // 
             // searchForAppointmentToolStripMenuItem
             // 
             this.searchForAppointmentToolStripMenuItem.Name = "searchForAppointmentToolStripMenuItem";
             this.searchForAppointmentToolStripMenuItem.Size = new System.Drawing.Size(148, 20);
             this.searchForAppointmentToolStripMenuItem.Text = "Search For Appointment";
+            this.searchForAppointmentToolStripMenuItem.Click += new System.EventHandler(this.searchForAppointmentToolStripMenuItem_Click);
             // 
             // tabPatients
             // 
@@ -1936,6 +1936,7 @@
             this.button4.Text = "View Monthly reports";
             this.button4.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
             // grpExit
             // 
             this.grpExit.Controls.Add(this.btnExit2);
@@ -2163,6 +2164,15 @@
             this.btnExit3.Text = "Exit";
             this.btnExit3.UseVisualStyleBackColor = true;
             this.btnExit3.Click += new System.EventHandler(this.btnExit3_Click);
+=======
+            // cmbNewAppointDepart
+            // 
+            this.cmbNewAppointDepart.FormattingEnabled = true;
+            this.cmbNewAppointDepart.Location = new System.Drawing.Point(145, 81);
+            this.cmbNewAppointDepart.Name = "cmbNewAppointDepart";
+            this.cmbNewAppointDepart.Size = new System.Drawing.Size(168, 26);
+            this.cmbNewAppointDepart.TabIndex = 12;
+>>>>>>> 3254cb1f2e54fcdb07b592fdb59587a1bba416a2
             // 
             // Admin_Homepage
             // 
@@ -2332,7 +2342,7 @@
         private System.Windows.Forms.TextBox txtDeleteAppointID;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.GroupBox grpAddAppointment;
-        private System.Windows.Forms.ComboBox txtAppointDoctor;
+        private System.Windows.Forms.ComboBox cmbAppointDoctor;
         private System.Windows.Forms.Button btnAppointCancel;
         private System.Windows.Forms.Button btnAppointSave;
         private System.Windows.Forms.TextBox txtAppointdate;
@@ -2387,8 +2397,8 @@
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtNewAppointDepartmentID;
         private System.Windows.Forms.Label label64;
+<<<<<<< HEAD
         private System.Windows.Forms.GroupBox grpOptions1;
         private System.Windows.Forms.Button btnUpdatePatientOp1;
         private System.Windows.Forms.Button btnSearchPatientsOp1;
@@ -2425,5 +2435,8 @@
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.GroupBox grpExit2;
         private System.Windows.Forms.Button btnExit3;
+=======
+        private System.Windows.Forms.ComboBox cmbNewAppointDepart;
+>>>>>>> 3254cb1f2e54fcdb07b592fdb59587a1bba416a2
     }
 }
