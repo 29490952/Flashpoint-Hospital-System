@@ -70,7 +70,21 @@
             tabConDocActiv.SelectedIndex = 2;
         }
 
-        private void dataGrid_checkAppoint_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		private void btnDisplay_Click(object sender, EventArgs e)
+		{
+			lstPatient_Report_DerivedFrom_MakePrescription.Visible = true;
+
+			string deptID = txtDeptID.Text;
+			string docInvolved = txtInvoved.Text;
+			string opPreCondition = cmbPreCon.SelectedIndex.ToString();
+			string opPostCondition = cmbPostCon.SelectedIndex.ToString();
+			string opStartTime = txtStartTime.Text;
+			string opEndTime = txtEndTime.Text;
+			string opDescription = txtODescription.Text;
+
+		}
+
+		private void dataGrid_checkAppoint_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             lblStorePatID.Visible = true;
             int rowIndex = e.RowIndex;
