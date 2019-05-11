@@ -115,6 +115,7 @@ C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-H
 C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.csproj.GenerateResource.Cache
 C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.exe
 C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.pdb
+<<<<<<< HEAD
 C:\Users\Onthatile Happy Arie\Desktop\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Flashpoint_Interface.exe.config
 C:\Users\Onthatile Happy Arie\Desktop\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Flashpoint_Interface.exe
 C:\Users\Onthatile Happy Arie\Desktop\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Flashpoint_Interface.pdb
@@ -137,3 +138,6 @@ C:\Users\Onthatile Happy Arie\Desktop\Flashpoint-Hospital-System\Flashpoint_Inte
 C:\Users\Onthatile Happy Arie\Desktop\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.exe
 C:\Users\Onthatile Happy Arie\Desktop\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.pdb
 C:\Users\Onthatile Happy Arie\Desktop\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.PharmacyLogin.resources
+=======
+C:\Users\Ma3M0 Y24 Tumelo\Documents\Databases I\Project\Application\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.exe.config
+>>>>>>> 0a6bfcc56deb502e094b12b6c958c8b05bab269a
