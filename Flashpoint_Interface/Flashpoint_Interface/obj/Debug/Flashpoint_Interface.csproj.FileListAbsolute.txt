@@ -94,3 +94,24 @@ C:\Users\Onthatile Happy Arie\Documents\Flashpoint-Hospital-System-master\Flashp
 C:\Users\Ma3M0 Y24 Tumelo\Documents\Databases I\Project\Application\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\Ma3M0 Y24 Tumelo\Documents\Databases I\Project\Application\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Google.Protobuf.xml
 C:\Users\Ma3M0 Y24 Tumelo\Documents\Databases I\Project\Application\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Add_Drugs.resources
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Flashpoint_Interface.exe.config
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Flashpoint_Interface.exe
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Flashpoint_Interface.pdb
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\MySql.Data.dll
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Tulpep.NotificationWindow.dll
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\MySql.Data.xml
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.csprojResolveAssemblyReference.cache
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.csproj.Flashpoint_Interface.exe.config
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.AddDrugs.resources
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Add_Drugs.resources
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Admin_Homepage.resources
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Admin_Login.resources
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Doctor_Activities.resources
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Doctor_login.resources
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.PharmacyHomeTabs.resources
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Welcome.resources
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Homepage.resources
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Properties.Resources.resources
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.csproj.GenerateResource.Cache
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.exe
+C:\Users\Siphiwe Christabel\Documents\2019\ITRW311 Database\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.pdb
