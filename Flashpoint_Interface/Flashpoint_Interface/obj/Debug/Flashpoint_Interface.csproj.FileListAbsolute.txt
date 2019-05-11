@@ -94,3 +94,25 @@ C:\Users\Onthatile Happy Arie\Documents\Flashpoint-Hospital-System-master\Flashp
 C:\Users\Ma3M0 Y24 Tumelo\Documents\Databases I\Project\Application\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\Ma3M0 Y24 Tumelo\Documents\Databases I\Project\Application\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Google.Protobuf.xml
 C:\Users\Ma3M0 Y24 Tumelo\Documents\Databases I\Project\Application\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Add_Drugs.resources
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Flashpoint_Interface.exe.config
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Flashpoint_Interface.exe
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Flashpoint_Interface.pdb
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\MySql.Data.dll
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\Tulpep.NotificationWindow.dll
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\bin\Debug\MySql.Data.xml
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.csprojAssemblyReference.cache
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.AddDrugs.resources
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Add_Drugs.resources
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Admin_Homepage.resources
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Admin_Login.resources
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Doctor_Activities.resources
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Doctor_login.resources
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.PharmacyHomeTabs.resources
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Welcome.resources
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Homepage.resources
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.Properties.Resources.resources
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.csproj.GenerateResource.cache
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.csproj.CoreCompileInputs.cache
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.csproj.CopyComplete
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.exe
+C:\Users\Ramaesela Magoro\Documents\IT 3rd Year First Semester\ITRW311 DATABASE\Project\Flashpoint-Hospital-System\Flashpoint_Interface\Flashpoint_Interface\obj\Debug\Flashpoint_Interface.pdb
