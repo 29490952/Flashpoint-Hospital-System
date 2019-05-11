@@ -57,27 +57,15 @@
             this.deleteAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchForAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPatients = new System.Windows.Forms.TabPage();
+            this.grpExit = new System.Windows.Forms.GroupBox();
+            this.btnExit2 = new System.Windows.Forms.Button();
+            this.grpSeachResults = new System.Windows.Forms.GroupBox();
+            this.drSearch = new System.Windows.Forms.DataGridView();
+            this.btnUpdate1 = new System.Windows.Forms.Button();
             this.grpOptions1 = new System.Windows.Forms.GroupBox();
             this.btnUpdatePatientOp1 = new System.Windows.Forms.Button();
             this.btnSearchPatientsOp1 = new System.Windows.Forms.Button();
             this.btnAddPatientsOp1 = new System.Windows.Forms.Button();
-            this.grpSeachResults = new System.Windows.Forms.GroupBox();
-            this.drSearch = new System.Windows.Forms.DataGridView();
-            this.btnUpdate1 = new System.Windows.Forms.Button();
-            this.grpSearch = new System.Windows.Forms.GroupBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.txtSearchID = new System.Windows.Forms.TextBox();
-            this.txtSearchSurname = new System.Windows.Forms.TextBox();
-            this.txtSearchName = new System.Windows.Forms.TextBox();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.grpOptions2 = new System.Windows.Forms.GroupBox();
-            this.btnUpdatePatDetails = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btnSearchPat2 = new System.Windows.Forms.Button();
-            this.btnBack2 = new System.Windows.Forms.Button();
-            this.btnAddPat2 = new System.Windows.Forms.Button();
             this.grpAdd = new System.Windows.Forms.GroupBox();
             this.btnUpdate2 = new System.Windows.Forms.Button();
             this.btnAddPatient = new System.Windows.Forms.Button();
@@ -103,7 +91,43 @@
             this.label49 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
+            this.grpOptions2 = new System.Windows.Forms.GroupBox();
+            this.btnUpdatePatDetails = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btnSearchPat2 = new System.Windows.Forms.Button();
+            this.btnBack2 = new System.Windows.Forms.Button();
+            this.btnAddPat2 = new System.Windows.Forms.Button();
+            this.grpSearch = new System.Windows.Forms.GroupBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearchID = new System.Windows.Forms.TextBox();
+            this.txtSearchSurname = new System.Windows.Forms.TextBox();
+            this.txtSearchName = new System.Windows.Forms.TextBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
             this.tabAdmissions = new System.Windows.Forms.TabPage();
+            this.grpExit2 = new System.Windows.Forms.GroupBox();
+            this.btnExit3 = new System.Windows.Forms.Button();
+            this.grpRoomAssignment = new System.Windows.Forms.GroupBox();
+            this.btnRoomAssign = new System.Windows.Forms.Button();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.dateOUT = new System.Windows.Forms.DateTimePicker();
+            this.dateIN = new System.Windows.Forms.DateTimePicker();
+            this.dateAssign = new System.Windows.Forms.DateTimePicker();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.grpAdmission = new System.Windows.Forms.GroupBox();
+            this.btnAdmit = new System.Windows.Forms.Button();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
             this.tabStaff = new System.Windows.Forms.TabPage();
             this.grpDeleteStaffMember = new System.Windows.Forms.GroupBox();
             this.btnDeleteStaffM = new System.Windows.Forms.Button();
@@ -201,34 +225,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-<<<<<<< HEAD
-            this.grpExit = new System.Windows.Forms.GroupBox();
-            this.btnExit2 = new System.Windows.Forms.Button();
-            this.grpAdmission = new System.Windows.Forms.GroupBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.btnAdmit = new System.Windows.Forms.Button();
-            this.grpRoomAssignment = new System.Windows.Forms.GroupBox();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.dateAssign = new System.Windows.Forms.DateTimePicker();
-            this.dateIN = new System.Windows.Forms.DateTimePicker();
-            this.dateOUT = new System.Windows.Forms.DateTimePicker();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.btnRoomAssign = new System.Windows.Forms.Button();
-            this.grpExit2 = new System.Windows.Forms.GroupBox();
-            this.btnExit3 = new System.Windows.Forms.Button();
-=======
-            this.cmbNewAppointDepart = new System.Windows.Forms.ComboBox();
->>>>>>> 3254cb1f2e54fcdb07b592fdb59587a1bba416a2
+            this.cmdNewAppointDepart = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             this.grbSearchAppointment.SuspendLayout();
@@ -237,13 +234,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDisplayAppoint)).BeginInit();
             this.menuStrip3.SuspendLayout();
             this.tabPatients.SuspendLayout();
-            this.grpOptions1.SuspendLayout();
+            this.grpExit.SuspendLayout();
             this.grpSeachResults.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.drSearch)).BeginInit();
-            this.grpSearch.SuspendLayout();
-            this.grpOptions2.SuspendLayout();
+            this.grpOptions1.SuspendLayout();
             this.grpAdd.SuspendLayout();
+            this.grpOptions2.SuspendLayout();
+            this.grpSearch.SuspendLayout();
             this.tabAdmissions.SuspendLayout();
+            this.grpExit2.SuspendLayout();
+            this.grpRoomAssignment.SuspendLayout();
+            this.grpAdmission.SuspendLayout();
             this.tabStaff.SuspendLayout();
             this.grpDeleteStaffMember.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridStaffM)).BeginInit();
@@ -253,10 +254,6 @@
             this.menuStrip1.SuspendLayout();
             this.tabDepartments.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.grpExit.SuspendLayout();
-            this.grpAdmission.SuspendLayout();
-            this.grpRoomAssignment.SuspendLayout();
-            this.grpExit2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -367,7 +364,7 @@
             // grpAddAppointment
             // 
             this.grpAddAppointment.BackColor = System.Drawing.Color.White;
-            this.grpAddAppointment.Controls.Add(this.cmbNewAppointDepart);
+            this.grpAddAppointment.Controls.Add(this.cmdNewAppointDepart);
             this.grpAddAppointment.Controls.Add(this.label64);
             this.grpAddAppointment.Controls.Add(this.txtAppointTime);
             this.grpAddAppointment.Controls.Add(this.label62);
@@ -546,49 +543,24 @@
             this.tabPatients.TabIndex = 1;
             this.tabPatients.Text = "Patients";
             this.tabPatients.UseVisualStyleBackColor = true;
-            this.tabPatients.Click += new System.EventHandler(this.tabPatients_Click);
             // 
-            // grpOptions1
+            // grpExit
             // 
-            this.grpOptions1.Controls.Add(this.btnUpdatePatientOp1);
-            this.grpOptions1.Controls.Add(this.btnSearchPatientsOp1);
-            this.grpOptions1.Controls.Add(this.btnAddPatientsOp1);
-            this.grpOptions1.Location = new System.Drawing.Point(6, 39);
-            this.grpOptions1.Name = "grpOptions1";
-            this.grpOptions1.Size = new System.Drawing.Size(280, 380);
-            this.grpOptions1.TabIndex = 8;
-            this.grpOptions1.TabStop = false;
-            this.grpOptions1.Text = "Options";
+            this.grpExit.Controls.Add(this.btnExit2);
+            this.grpExit.Location = new System.Drawing.Point(845, 6);
+            this.grpExit.Name = "grpExit";
+            this.grpExit.Size = new System.Drawing.Size(200, 100);
+            this.grpExit.TabIndex = 1;
+            this.grpExit.TabStop = false;
             // 
-            // btnUpdatePatientOp1
+            // btnExit2
             // 
-            this.btnUpdatePatientOp1.Location = new System.Drawing.Point(95, 232);
-            this.btnUpdatePatientOp1.Name = "btnUpdatePatientOp1";
-            this.btnUpdatePatientOp1.Size = new System.Drawing.Size(98, 55);
-            this.btnUpdatePatientOp1.TabIndex = 2;
-            this.btnUpdatePatientOp1.Text = "Update Patient Details";
-            this.btnUpdatePatientOp1.UseVisualStyleBackColor = true;
-            this.btnUpdatePatientOp1.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // btnSearchPatientsOp1
-            // 
-            this.btnSearchPatientsOp1.Location = new System.Drawing.Point(95, 162);
-            this.btnSearchPatientsOp1.Name = "btnSearchPatientsOp1";
-            this.btnSearchPatientsOp1.Size = new System.Drawing.Size(98, 46);
-            this.btnSearchPatientsOp1.TabIndex = 1;
-            this.btnSearchPatientsOp1.Text = "Search Patient";
-            this.btnSearchPatientsOp1.UseVisualStyleBackColor = true;
-            this.btnSearchPatientsOp1.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // btnAddPatientsOp1
-            // 
-            this.btnAddPatientsOp1.Location = new System.Drawing.Point(95, 87);
-            this.btnAddPatientsOp1.Name = "btnAddPatientsOp1";
-            this.btnAddPatientsOp1.Size = new System.Drawing.Size(98, 48);
-            this.btnAddPatientsOp1.TabIndex = 0;
-            this.btnAddPatientsOp1.Text = "Add Patient";
-            this.btnAddPatientsOp1.UseVisualStyleBackColor = true;
-            this.btnAddPatientsOp1.Click += new System.EventHandler(this.btnAddPatientsOp1_Click);
+            this.btnExit2.Location = new System.Drawing.Point(47, 41);
+            this.btnExit2.Name = "btnExit2";
+            this.btnExit2.Size = new System.Drawing.Size(75, 40);
+            this.btnExit2.TabIndex = 0;
+            this.btnExit2.Text = "Exit";
+            this.btnExit2.UseVisualStyleBackColor = true;
             // 
             // grpSeachResults
             // 
@@ -618,147 +590,45 @@
             this.btnUpdate1.TabIndex = 1;
             this.btnUpdate1.Text = "Update ";
             this.btnUpdate1.UseVisualStyleBackColor = true;
-            this.btnUpdate1.Click += new System.EventHandler(this.btnUpdate1_Click);
             // 
-            // grpSearch
+            // grpOptions1
             // 
-            this.grpSearch.Controls.Add(this.btnSearch);
-            this.grpSearch.Controls.Add(this.txtSearchID);
-            this.grpSearch.Controls.Add(this.txtSearchSurname);
-            this.grpSearch.Controls.Add(this.txtSearchName);
-            this.grpSearch.Controls.Add(this.label61);
-            this.grpSearch.Controls.Add(this.label60);
-            this.grpSearch.Controls.Add(this.label59);
-            this.grpSearch.Location = new System.Drawing.Point(418, 32);
-            this.grpSearch.Name = "grpSearch";
-            this.grpSearch.Size = new System.Drawing.Size(431, 224);
-            this.grpSearch.TabIndex = 1;
-            this.grpSearch.TabStop = false;
-            this.grpSearch.Text = "Search";
-            this.grpSearch.Visible = false;
+            this.grpOptions1.Controls.Add(this.btnUpdatePatientOp1);
+            this.grpOptions1.Controls.Add(this.btnSearchPatientsOp1);
+            this.grpOptions1.Controls.Add(this.btnAddPatientsOp1);
+            this.grpOptions1.Location = new System.Drawing.Point(6, 39);
+            this.grpOptions1.Name = "grpOptions1";
+            this.grpOptions1.Size = new System.Drawing.Size(280, 380);
+            this.grpOptions1.TabIndex = 8;
+            this.grpOptions1.TabStop = false;
+            this.grpOptions1.Text = "Options";
             // 
-            // btnSearch
+            // btnUpdatePatientOp1
             // 
-            this.btnSearch.Location = new System.Drawing.Point(35, 178);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 7;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnUpdatePatientOp1.Location = new System.Drawing.Point(95, 232);
+            this.btnUpdatePatientOp1.Name = "btnUpdatePatientOp1";
+            this.btnUpdatePatientOp1.Size = new System.Drawing.Size(98, 55);
+            this.btnUpdatePatientOp1.TabIndex = 2;
+            this.btnUpdatePatientOp1.Text = "Update Patient Details";
+            this.btnUpdatePatientOp1.UseVisualStyleBackColor = true;
             // 
-            // txtSearchID
+            // btnSearchPatientsOp1
             // 
-            this.txtSearchID.Location = new System.Drawing.Point(187, 117);
-            this.txtSearchID.Name = "txtSearchID";
-            this.txtSearchID.Size = new System.Drawing.Size(100, 25);
-            this.txtSearchID.TabIndex = 6;
+            this.btnSearchPatientsOp1.Location = new System.Drawing.Point(95, 162);
+            this.btnSearchPatientsOp1.Name = "btnSearchPatientsOp1";
+            this.btnSearchPatientsOp1.Size = new System.Drawing.Size(98, 46);
+            this.btnSearchPatientsOp1.TabIndex = 1;
+            this.btnSearchPatientsOp1.Text = "Search Patient";
+            this.btnSearchPatientsOp1.UseVisualStyleBackColor = true;
             // 
-            // txtSearchSurname
+            // btnAddPatientsOp1
             // 
-            this.txtSearchSurname.Location = new System.Drawing.Point(187, 83);
-            this.txtSearchSurname.Name = "txtSearchSurname";
-            this.txtSearchSurname.Size = new System.Drawing.Size(100, 25);
-            this.txtSearchSurname.TabIndex = 5;
-            // 
-            // txtSearchName
-            // 
-            this.txtSearchName.Location = new System.Drawing.Point(187, 43);
-            this.txtSearchName.Name = "txtSearchName";
-            this.txtSearchName.Size = new System.Drawing.Size(100, 25);
-            this.txtSearchName.TabIndex = 4;
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(32, 120);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(97, 18);
-            this.label61.TabIndex = 2;
-            this.label61.Text = "ID Number : ";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(32, 86);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(78, 18);
-            this.label60.TabIndex = 1;
-            this.label60.Text = "Surname : ";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(32, 50);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(58, 18);
-            this.label59.TabIndex = 0;
-            this.label59.Text = "Name : ";
-            // 
-            // grpOptions2
-            // 
-            this.grpOptions2.Controls.Add(this.btnUpdatePatDetails);
-            this.grpOptions2.Controls.Add(this.button5);
-            this.grpOptions2.Controls.Add(this.btnSearchPat2);
-            this.grpOptions2.Controls.Add(this.btnBack2);
-            this.grpOptions2.Controls.Add(this.btnAddPat2);
-            this.grpOptions2.Location = new System.Drawing.Point(845, 32);
-            this.grpOptions2.Name = "grpOptions2";
-            this.grpOptions2.Size = new System.Drawing.Size(175, 356);
-            this.grpOptions2.TabIndex = 9;
-            this.grpOptions2.TabStop = false;
-            this.grpOptions2.Text = "Options";
-            this.grpOptions2.Visible = false;
-            // 
-            // btnUpdatePatDetails
-            // 
-            this.btnUpdatePatDetails.Location = new System.Drawing.Point(30, 191);
-            this.btnUpdatePatDetails.Name = "btnUpdatePatDetails";
-            this.btnUpdatePatDetails.Size = new System.Drawing.Size(120, 55);
-            this.btnUpdatePatDetails.TabIndex = 3;
-            this.btnUpdatePatDetails.Text = "Update Patient Details";
-            this.btnUpdatePatDetails.UseVisualStyleBackColor = true;
-            this.btnUpdatePatDetails.Click += new System.EventHandler(this.btnUpdatePatDetails_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(30, 299);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(120, 46);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Exit";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
-            // 
-            // btnSearchPat2
-            // 
-            this.btnSearchPat2.Location = new System.Drawing.Point(30, 139);
-            this.btnSearchPat2.Name = "btnSearchPat2";
-            this.btnSearchPat2.Size = new System.Drawing.Size(120, 46);
-            this.btnSearchPat2.TabIndex = 1;
-            this.btnSearchPat2.Text = "Search Patient";
-            this.btnSearchPat2.UseVisualStyleBackColor = true;
-            this.btnSearchPat2.Click += new System.EventHandler(this.btnSearchPat2_Click);
-            // 
-            // btnBack2
-            // 
-            this.btnBack2.Location = new System.Drawing.Point(30, 250);
-            this.btnBack2.Name = "btnBack2";
-            this.btnBack2.Size = new System.Drawing.Size(120, 46);
-            this.btnBack2.TabIndex = 5;
-            this.btnBack2.Text = "Back";
-            this.btnBack2.UseVisualStyleBackColor = true;
-            this.btnBack2.Click += new System.EventHandler(this.btnBack2_Click);
-            // 
-            // btnAddPat2
-            // 
-            this.btnAddPat2.Location = new System.Drawing.Point(30, 85);
-            this.btnAddPat2.Name = "btnAddPat2";
-            this.btnAddPat2.Size = new System.Drawing.Size(120, 48);
-            this.btnAddPat2.TabIndex = 0;
-            this.btnAddPat2.Text = "Add Patient";
-            this.btnAddPat2.UseVisualStyleBackColor = true;
-            this.btnAddPat2.Click += new System.EventHandler(this.btnAddPat2_Click);
+            this.btnAddPatientsOp1.Location = new System.Drawing.Point(95, 87);
+            this.btnAddPatientsOp1.Name = "btnAddPatientsOp1";
+            this.btnAddPatientsOp1.Size = new System.Drawing.Size(98, 48);
+            this.btnAddPatientsOp1.TabIndex = 0;
+            this.btnAddPatientsOp1.Text = "Add Patient";
+            this.btnAddPatientsOp1.UseVisualStyleBackColor = true;
             // 
             // grpAdd
             // 
@@ -802,7 +672,6 @@
             this.btnUpdate2.TabIndex = 24;
             this.btnUpdate2.Text = "Update patient Details";
             this.btnUpdate2.UseVisualStyleBackColor = true;
-            this.btnUpdate2.Click += new System.EventHandler(this.btnUpdate2_Click);
             // 
             // btnAddPatient
             // 
@@ -812,7 +681,6 @@
             this.btnAddPatient.TabIndex = 23;
             this.btnAddPatient.Text = "Add Patient";
             this.btnAddPatient.UseVisualStyleBackColor = true;
-            this.btnAddPatient.Click += new System.EventHandler(this.btnAddPatient_Click);
             // 
             // txtAllergies
             // 
@@ -994,6 +862,140 @@
             this.label48.TabIndex = 0;
             this.label48.Text = "Name : ";
             // 
+            // grpOptions2
+            // 
+            this.grpOptions2.Controls.Add(this.btnUpdatePatDetails);
+            this.grpOptions2.Controls.Add(this.button5);
+            this.grpOptions2.Controls.Add(this.btnSearchPat2);
+            this.grpOptions2.Controls.Add(this.btnBack2);
+            this.grpOptions2.Controls.Add(this.btnAddPat2);
+            this.grpOptions2.Location = new System.Drawing.Point(845, 32);
+            this.grpOptions2.Name = "grpOptions2";
+            this.grpOptions2.Size = new System.Drawing.Size(175, 356);
+            this.grpOptions2.TabIndex = 9;
+            this.grpOptions2.TabStop = false;
+            this.grpOptions2.Text = "Options";
+            this.grpOptions2.Visible = false;
+            // 
+            // btnUpdatePatDetails
+            // 
+            this.btnUpdatePatDetails.Location = new System.Drawing.Point(30, 191);
+            this.btnUpdatePatDetails.Name = "btnUpdatePatDetails";
+            this.btnUpdatePatDetails.Size = new System.Drawing.Size(120, 55);
+            this.btnUpdatePatDetails.TabIndex = 3;
+            this.btnUpdatePatDetails.Text = "Update Patient Details";
+            this.btnUpdatePatDetails.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(30, 299);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(120, 46);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "Exit";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // btnSearchPat2
+            // 
+            this.btnSearchPat2.Location = new System.Drawing.Point(30, 139);
+            this.btnSearchPat2.Name = "btnSearchPat2";
+            this.btnSearchPat2.Size = new System.Drawing.Size(120, 46);
+            this.btnSearchPat2.TabIndex = 1;
+            this.btnSearchPat2.Text = "Search Patient";
+            this.btnSearchPat2.UseVisualStyleBackColor = true;
+            // 
+            // btnBack2
+            // 
+            this.btnBack2.Location = new System.Drawing.Point(30, 250);
+            this.btnBack2.Name = "btnBack2";
+            this.btnBack2.Size = new System.Drawing.Size(120, 46);
+            this.btnBack2.TabIndex = 5;
+            this.btnBack2.Text = "Back";
+            this.btnBack2.UseVisualStyleBackColor = true;
+            // 
+            // btnAddPat2
+            // 
+            this.btnAddPat2.Location = new System.Drawing.Point(30, 85);
+            this.btnAddPat2.Name = "btnAddPat2";
+            this.btnAddPat2.Size = new System.Drawing.Size(120, 48);
+            this.btnAddPat2.TabIndex = 0;
+            this.btnAddPat2.Text = "Add Patient";
+            this.btnAddPat2.UseVisualStyleBackColor = true;
+            // 
+            // grpSearch
+            // 
+            this.grpSearch.Controls.Add(this.btnSearch);
+            this.grpSearch.Controls.Add(this.txtSearchID);
+            this.grpSearch.Controls.Add(this.txtSearchSurname);
+            this.grpSearch.Controls.Add(this.txtSearchName);
+            this.grpSearch.Controls.Add(this.label61);
+            this.grpSearch.Controls.Add(this.label60);
+            this.grpSearch.Controls.Add(this.label59);
+            this.grpSearch.Location = new System.Drawing.Point(418, 32);
+            this.grpSearch.Name = "grpSearch";
+            this.grpSearch.Size = new System.Drawing.Size(431, 224);
+            this.grpSearch.TabIndex = 1;
+            this.grpSearch.TabStop = false;
+            this.grpSearch.Text = "Search";
+            this.grpSearch.Visible = false;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(35, 178);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 7;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // txtSearchID
+            // 
+            this.txtSearchID.Location = new System.Drawing.Point(187, 117);
+            this.txtSearchID.Name = "txtSearchID";
+            this.txtSearchID.Size = new System.Drawing.Size(100, 25);
+            this.txtSearchID.TabIndex = 6;
+            // 
+            // txtSearchSurname
+            // 
+            this.txtSearchSurname.Location = new System.Drawing.Point(187, 83);
+            this.txtSearchSurname.Name = "txtSearchSurname";
+            this.txtSearchSurname.Size = new System.Drawing.Size(100, 25);
+            this.txtSearchSurname.TabIndex = 5;
+            // 
+            // txtSearchName
+            // 
+            this.txtSearchName.Location = new System.Drawing.Point(187, 43);
+            this.txtSearchName.Name = "txtSearchName";
+            this.txtSearchName.Size = new System.Drawing.Size(100, 25);
+            this.txtSearchName.TabIndex = 4;
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(32, 120);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(97, 18);
+            this.label61.TabIndex = 2;
+            this.label61.Text = "ID Number : ";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(32, 86);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(78, 18);
+            this.label60.TabIndex = 1;
+            this.label60.Text = "Surname : ";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(32, 50);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(58, 18);
+            this.label59.TabIndex = 0;
+            this.label59.Text = "Name : ";
+            // 
             // tabAdmissions
             // 
             this.tabAdmissions.Controls.Add(this.grpExit2);
@@ -1005,6 +1007,213 @@
             this.tabAdmissions.TabIndex = 4;
             this.tabAdmissions.Text = "Admissions";
             this.tabAdmissions.UseVisualStyleBackColor = true;
+            // 
+            // grpExit2
+            // 
+            this.grpExit2.Controls.Add(this.btnExit3);
+            this.grpExit2.Location = new System.Drawing.Point(863, 41);
+            this.grpExit2.Name = "grpExit2";
+            this.grpExit2.Size = new System.Drawing.Size(110, 66);
+            this.grpExit2.TabIndex = 1;
+            this.grpExit2.TabStop = false;
+            // 
+            // btnExit3
+            // 
+            this.btnExit3.Location = new System.Drawing.Point(29, 24);
+            this.btnExit3.Name = "btnExit3";
+            this.btnExit3.Size = new System.Drawing.Size(75, 26);
+            this.btnExit3.TabIndex = 0;
+            this.btnExit3.Text = "Exit";
+            this.btnExit3.UseVisualStyleBackColor = true;
+            // 
+            // grpRoomAssignment
+            // 
+            this.grpRoomAssignment.Controls.Add(this.btnRoomAssign);
+            this.grpRoomAssignment.Controls.Add(this.label74);
+            this.grpRoomAssignment.Controls.Add(this.label73);
+            this.grpRoomAssignment.Controls.Add(this.dateOUT);
+            this.grpRoomAssignment.Controls.Add(this.dateIN);
+            this.grpRoomAssignment.Controls.Add(this.dateAssign);
+            this.grpRoomAssignment.Controls.Add(this.label72);
+            this.grpRoomAssignment.Controls.Add(this.label71);
+            this.grpRoomAssignment.Controls.Add(this.label70);
+            this.grpRoomAssignment.Controls.Add(this.label69);
+            this.grpRoomAssignment.Location = new System.Drawing.Point(413, 41);
+            this.grpRoomAssignment.Name = "grpRoomAssignment";
+            this.grpRoomAssignment.Size = new System.Drawing.Size(435, 389);
+            this.grpRoomAssignment.TabIndex = 1;
+            this.grpRoomAssignment.TabStop = false;
+            this.grpRoomAssignment.Text = "Room Assignment";
+            this.grpRoomAssignment.Visible = false;
+            // 
+            // btnRoomAssign
+            // 
+            this.btnRoomAssign.Location = new System.Drawing.Point(187, 353);
+            this.btnRoomAssign.Name = "btnRoomAssign";
+            this.btnRoomAssign.Size = new System.Drawing.Size(149, 30);
+            this.btnRoomAssign.TabIndex = 9;
+            this.btnRoomAssign.Text = "Assign Room";
+            this.btnRoomAssign.UseVisualStyleBackColor = true;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(21, 261);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(119, 18);
+            this.label74.TabIndex = 8;
+            this.label74.Text = "Check In Time : ";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(21, 317);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(126, 18);
+            this.label73.TabIndex = 7;
+            this.label73.Text = "Check Out Time : ";
+            // 
+            // dateOUT
+            // 
+            this.dateOUT.Enabled = false;
+            this.dateOUT.Location = new System.Drawing.Point(187, 310);
+            this.dateOUT.Name = "dateOUT";
+            this.dateOUT.Size = new System.Drawing.Size(242, 25);
+            this.dateOUT.TabIndex = 6;
+            // 
+            // dateIN
+            // 
+            this.dateIN.Location = new System.Drawing.Point(187, 256);
+            this.dateIN.Name = "dateIN";
+            this.dateIN.Size = new System.Drawing.Size(242, 25);
+            this.dateIN.TabIndex = 5;
+            this.dateIN.Value = new System.DateTime(2019, 5, 11, 10, 33, 0, 0);
+            // 
+            // dateAssign
+            // 
+            this.dateAssign.Location = new System.Drawing.Point(187, 204);
+            this.dateAssign.Name = "dateAssign";
+            this.dateAssign.Size = new System.Drawing.Size(242, 25);
+            this.dateAssign.TabIndex = 4;
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(21, 209);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(133, 18);
+            this.label72.TabIndex = 3;
+            this.label72.Text = "Assignment Date : ";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(21, 118);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(83, 18);
+            this.label71.TabIndex = 2;
+            this.label71.Text = "Room ID : ";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(21, 77);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(115, 18);
+            this.label70.TabIndex = 1;
+            this.label70.Text = "Admission ID : ";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(21, 37);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(159, 18);
+            this.label69.TabIndex = 0;
+            this.label69.Text = "Room Assignment ID :";
+            // 
+            // grpAdmission
+            // 
+            this.grpAdmission.Controls.Add(this.btnAdmit);
+            this.grpAdmission.Controls.Add(this.label67);
+            this.grpAdmission.Controls.Add(this.label68);
+            this.grpAdmission.Controls.Add(this.label66);
+            this.grpAdmission.Controls.Add(this.textBox2);
+            this.grpAdmission.Controls.Add(this.textBox1);
+            this.grpAdmission.Controls.Add(this.label65);
+            this.grpAdmission.Controls.Add(this.label45);
+            this.grpAdmission.Location = new System.Drawing.Point(20, 32);
+            this.grpAdmission.Name = "grpAdmission";
+            this.grpAdmission.Size = new System.Drawing.Size(387, 216);
+            this.grpAdmission.TabIndex = 0;
+            this.grpAdmission.TabStop = false;
+            this.grpAdmission.Text = "Admission";
+            // 
+            // btnAdmit
+            // 
+            this.btnAdmit.Location = new System.Drawing.Point(208, 169);
+            this.btnAdmit.Name = "btnAdmit";
+            this.btnAdmit.Size = new System.Drawing.Size(119, 31);
+            this.btnAdmit.TabIndex = 8;
+            this.btnAdmit.Text = "Admit";
+            this.btnAdmit.UseVisualStyleBackColor = true;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(26, 122);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(166, 18);
+            this.label67.TabIndex = 7;
+            this.label67.Text = "Reason for Admission : ";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(26, 118);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(0, 18);
+            this.label68.TabIndex = 5;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(26, 77);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(93, 18);
+            this.label66.TabIndex = 4;
+            this.label66.Text = "Patient ID : ";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(147, 70);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 25);
+            this.textBox2.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(147, 34);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 25);
+            this.textBox1.TabIndex = 2;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(26, 73);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(0, 18);
+            this.label65.TabIndex = 1;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(26, 37);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(121, 18);
+            this.label45.TabIndex = 0;
+            this.label45.Text = "Admisssion ID : ";
             // 
             // tabStaff
             // 
@@ -1936,243 +2145,13 @@
             this.button4.Text = "View Monthly reports";
             this.button4.UseVisualStyleBackColor = true;
             // 
-<<<<<<< HEAD
-            // grpExit
+            // cmdNewAppointDepart
             // 
-            this.grpExit.Controls.Add(this.btnExit2);
-            this.grpExit.Location = new System.Drawing.Point(845, 6);
-            this.grpExit.Name = "grpExit";
-            this.grpExit.Size = new System.Drawing.Size(200, 100);
-            this.grpExit.TabIndex = 1;
-            this.grpExit.TabStop = false;
-            // 
-            // btnExit2
-            // 
-            this.btnExit2.Location = new System.Drawing.Point(47, 41);
-            this.btnExit2.Name = "btnExit2";
-            this.btnExit2.Size = new System.Drawing.Size(75, 40);
-            this.btnExit2.TabIndex = 0;
-            this.btnExit2.Text = "Exit";
-            this.btnExit2.UseVisualStyleBackColor = true;
-            this.btnExit2.Click += new System.EventHandler(this.btnExit2_Click);
-            // 
-            // grpAdmission
-            // 
-            this.grpAdmission.Controls.Add(this.btnAdmit);
-            this.grpAdmission.Controls.Add(this.label67);
-            this.grpAdmission.Controls.Add(this.label68);
-            this.grpAdmission.Controls.Add(this.label66);
-            this.grpAdmission.Controls.Add(this.textBox2);
-            this.grpAdmission.Controls.Add(this.textBox1);
-            this.grpAdmission.Controls.Add(this.label65);
-            this.grpAdmission.Controls.Add(this.label45);
-            this.grpAdmission.Location = new System.Drawing.Point(20, 32);
-            this.grpAdmission.Name = "grpAdmission";
-            this.grpAdmission.Size = new System.Drawing.Size(387, 216);
-            this.grpAdmission.TabIndex = 0;
-            this.grpAdmission.TabStop = false;
-            this.grpAdmission.Text = "Admission";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(26, 37);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(121, 18);
-            this.label45.TabIndex = 0;
-            this.label45.Text = "Admisssion ID : ";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(26, 73);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(0, 18);
-            this.label65.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(147, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(147, 70);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 25);
-            this.textBox2.TabIndex = 3;
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(26, 77);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(93, 18);
-            this.label66.TabIndex = 4;
-            this.label66.Text = "Patient ID : ";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(26, 122);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(166, 18);
-            this.label67.TabIndex = 7;
-            this.label67.Text = "Reason for Admission : ";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(26, 118);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(0, 18);
-            this.label68.TabIndex = 5;
-            // 
-            // btnAdmit
-            // 
-            this.btnAdmit.Location = new System.Drawing.Point(208, 169);
-            this.btnAdmit.Name = "btnAdmit";
-            this.btnAdmit.Size = new System.Drawing.Size(119, 31);
-            this.btnAdmit.TabIndex = 8;
-            this.btnAdmit.Text = "Admit";
-            this.btnAdmit.UseVisualStyleBackColor = true;
-            this.btnAdmit.Click += new System.EventHandler(this.btnAdmit_Click);
-            // 
-            // grpRoomAssignment
-            // 
-            this.grpRoomAssignment.Controls.Add(this.btnRoomAssign);
-            this.grpRoomAssignment.Controls.Add(this.label74);
-            this.grpRoomAssignment.Controls.Add(this.label73);
-            this.grpRoomAssignment.Controls.Add(this.dateOUT);
-            this.grpRoomAssignment.Controls.Add(this.dateIN);
-            this.grpRoomAssignment.Controls.Add(this.dateAssign);
-            this.grpRoomAssignment.Controls.Add(this.label72);
-            this.grpRoomAssignment.Controls.Add(this.label71);
-            this.grpRoomAssignment.Controls.Add(this.label70);
-            this.grpRoomAssignment.Controls.Add(this.label69);
-            this.grpRoomAssignment.Location = new System.Drawing.Point(413, 41);
-            this.grpRoomAssignment.Name = "grpRoomAssignment";
-            this.grpRoomAssignment.Size = new System.Drawing.Size(435, 389);
-            this.grpRoomAssignment.TabIndex = 1;
-            this.grpRoomAssignment.TabStop = false;
-            this.grpRoomAssignment.Text = "Room Assignment";
-            this.grpRoomAssignment.Visible = false;
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(21, 37);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(159, 18);
-            this.label69.TabIndex = 0;
-            this.label69.Text = "Room Assignment ID :";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(21, 77);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(115, 18);
-            this.label70.TabIndex = 1;
-            this.label70.Text = "Admission ID : ";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(21, 118);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(83, 18);
-            this.label71.TabIndex = 2;
-            this.label71.Text = "Room ID : ";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(21, 209);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(133, 18);
-            this.label72.TabIndex = 3;
-            this.label72.Text = "Assignment Date : ";
-            // 
-            // dateAssign
-            // 
-            this.dateAssign.Location = new System.Drawing.Point(187, 204);
-            this.dateAssign.Name = "dateAssign";
-            this.dateAssign.Size = new System.Drawing.Size(242, 25);
-            this.dateAssign.TabIndex = 4;
-            // 
-            // dateIN
-            // 
-            this.dateIN.Location = new System.Drawing.Point(187, 256);
-            this.dateIN.Name = "dateIN";
-            this.dateIN.Size = new System.Drawing.Size(242, 25);
-            this.dateIN.TabIndex = 5;
-            this.dateIN.Value = new System.DateTime(2019, 5, 11, 10, 33, 0, 0);
-            // 
-            // dateOUT
-            // 
-            this.dateOUT.Enabled = false;
-            this.dateOUT.Location = new System.Drawing.Point(187, 310);
-            this.dateOUT.Name = "dateOUT";
-            this.dateOUT.Size = new System.Drawing.Size(242, 25);
-            this.dateOUT.TabIndex = 6;
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(21, 317);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(126, 18);
-            this.label73.TabIndex = 7;
-            this.label73.Text = "Check Out Time : ";
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(21, 261);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(119, 18);
-            this.label74.TabIndex = 8;
-            this.label74.Text = "Check In Time : ";
-            // 
-            // btnRoomAssign
-            // 
-            this.btnRoomAssign.Location = new System.Drawing.Point(187, 353);
-            this.btnRoomAssign.Name = "btnRoomAssign";
-            this.btnRoomAssign.Size = new System.Drawing.Size(149, 30);
-            this.btnRoomAssign.TabIndex = 9;
-            this.btnRoomAssign.Text = "Assign Room";
-            this.btnRoomAssign.UseVisualStyleBackColor = true;
-            // 
-            // grpExit2
-            // 
-            this.grpExit2.Controls.Add(this.btnExit3);
-            this.grpExit2.Location = new System.Drawing.Point(863, 41);
-            this.grpExit2.Name = "grpExit2";
-            this.grpExit2.Size = new System.Drawing.Size(110, 66);
-            this.grpExit2.TabIndex = 1;
-            this.grpExit2.TabStop = false;
-            // 
-            // btnExit3
-            // 
-            this.btnExit3.Location = new System.Drawing.Point(29, 24);
-            this.btnExit3.Name = "btnExit3";
-            this.btnExit3.Size = new System.Drawing.Size(75, 26);
-            this.btnExit3.TabIndex = 0;
-            this.btnExit3.Text = "Exit";
-            this.btnExit3.UseVisualStyleBackColor = true;
-            this.btnExit3.Click += new System.EventHandler(this.btnExit3_Click);
-=======
-            // cmbNewAppointDepart
-            // 
-            this.cmbNewAppointDepart.FormattingEnabled = true;
-            this.cmbNewAppointDepart.Location = new System.Drawing.Point(145, 81);
-            this.cmbNewAppointDepart.Name = "cmbNewAppointDepart";
-            this.cmbNewAppointDepart.Size = new System.Drawing.Size(168, 26);
-            this.cmbNewAppointDepart.TabIndex = 12;
->>>>>>> 3254cb1f2e54fcdb07b592fdb59587a1bba416a2
+            this.cmdNewAppointDepart.FormattingEnabled = true;
+            this.cmdNewAppointDepart.Location = new System.Drawing.Point(145, 82);
+            this.cmdNewAppointDepart.Name = "cmdNewAppointDepart";
+            this.cmdNewAppointDepart.Size = new System.Drawing.Size(168, 26);
+            this.cmdNewAppointDepart.TabIndex = 12;
             // 
             // Admin_Homepage
             // 
@@ -2200,15 +2179,21 @@
             this.menuStrip3.ResumeLayout(false);
             this.menuStrip3.PerformLayout();
             this.tabPatients.ResumeLayout(false);
-            this.grpOptions1.ResumeLayout(false);
+            this.grpExit.ResumeLayout(false);
             this.grpSeachResults.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.drSearch)).EndInit();
-            this.grpSearch.ResumeLayout(false);
-            this.grpSearch.PerformLayout();
-            this.grpOptions2.ResumeLayout(false);
+            this.grpOptions1.ResumeLayout(false);
             this.grpAdd.ResumeLayout(false);
             this.grpAdd.PerformLayout();
+            this.grpOptions2.ResumeLayout(false);
+            this.grpSearch.ResumeLayout(false);
+            this.grpSearch.PerformLayout();
             this.tabAdmissions.ResumeLayout(false);
+            this.grpExit2.ResumeLayout(false);
+            this.grpRoomAssignment.ResumeLayout(false);
+            this.grpRoomAssignment.PerformLayout();
+            this.grpAdmission.ResumeLayout(false);
+            this.grpAdmission.PerformLayout();
             this.tabStaff.ResumeLayout(false);
             this.tabStaff.PerformLayout();
             this.grpDeleteStaffMember.ResumeLayout(false);
@@ -2225,12 +2210,6 @@
             this.tabDepartments.ResumeLayout(false);
             this.tabDepartments.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.grpExit.ResumeLayout(false);
-            this.grpAdmission.ResumeLayout(false);
-            this.grpAdmission.PerformLayout();
-            this.grpRoomAssignment.ResumeLayout(false);
-            this.grpRoomAssignment.PerformLayout();
-            this.grpExit2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2398,7 +2377,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label64;
-<<<<<<< HEAD
+
         private System.Windows.Forms.GroupBox grpOptions1;
         private System.Windows.Forms.Button btnUpdatePatientOp1;
         private System.Windows.Forms.Button btnSearchPatientsOp1;
@@ -2435,8 +2414,7 @@
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.GroupBox grpExit2;
         private System.Windows.Forms.Button btnExit3;
-=======
         private System.Windows.Forms.ComboBox cmbNewAppointDepart;
->>>>>>> 3254cb1f2e54fcdb07b592fdb59587a1bba416a2
+        private System.Windows.Forms.ComboBox cmdNewAppointDepart;
     }
 }
