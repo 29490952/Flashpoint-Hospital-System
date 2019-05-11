@@ -49,35 +49,15 @@ namespace Flashpoint_Interface
 
         private void btnViewPres_Click(object sender, EventArgs e)
         {
-            PresTab.Show();
-            sqlConn.Open();
-            try
-            {
-                
+            tabControl1.SelectTab(1);
 
-                MySqlDataAdapter adapter = new MySqlDataAdapter("CALL ph_Access_Prescriptions('" + txtPatID + "')", sqlConn);
-                DataSet ds = new DataSet();
-                adapter.Fill(ds, "prescription");
-
-                presDataGridView.DataSource = ds;
-                presDataGridView.DataMember = "prescription";
-
-                sqlConn.Close();
-            }
-            catch(MySqlException er)
-            {
-
-            }
-           
-           
         }
 
         private void btnDrugAvail_Click(object sender, EventArgs e)
         {
 
-            DrugsTab.Show();
+            tabControl1.SelectTab(2);
 
-            sqlConn.Open();
 
             try
             {
@@ -94,7 +74,7 @@ namespace Flashpoint_Interface
             }
             catch (MySqlException er)
             {
-
+                MessageBox.Show(er.Message);
             }
 
 
@@ -111,71 +91,46 @@ namespace Flashpoint_Interface
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-               
-                //if(!(txtUserID.Text == string.Empty))
-                //{
-                //    if(!(txtPassword.Text == string.Empty))
-                //    {
-                //        String str = "TABLE FOR LOGIN CREDENTIALS";
-                //        String query = "select * from DATABSE where UserID ='" + txtUserID.Text + "'and Password='" + this.txtPassword.Text + "'";
+        
 
-                //        SqlConnection con = new SqlConnection(str);
-                //        SqlCommand cmd = new SqlCommand(query, con);
-                //        SqlDataReader dtr;
-
-                //        con.Open();
-                //        dtr = cmd.ExecuteReader();
-
-                //        int count = 0;
-                //        while(dtr.Read())
-                //        {
-                //            count = count + 1;
-                //        }
-                //        if(count == 1)
-                //        {
-                //            MessageBox.Show("Login Successful");
-                //        }
-                //        else if(count > 1)
-                //        {
-                //            MessageBox.Show("Invalid Loign Credentials");
-                //        }
-                //        else
-                //        {
-                //            MessageBox.Show("");
-                //        }
-                //    }
-                //}
-                sqlConn.Close();
-            }
-            catch(Exception es)
-            {
-                MessageBox.Show(es.Message);
-            }
-
-        }
-
-        private void LoginTab_Click(object sender, EventArgs e)
-        {
-            PresTab.Hide();
-            DrugsTab.Hide();
-            tabControl1.TabPages.Remove(PresTab);
-            tabControl1.TabPages.Remove(DrugsTab);
-
-        }
-
-        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Add_Drugs myDrugs = new Add_Drugs();
             myDrugs.ShowDialog();
+
+        }
+
+
+        private void btnViewPrescription_Click(object sender, EventArgs e)
+        {
+            sqlConn.Open();
+            try
+            {
+
+
+                MySqlDataAdapter adapter = new MySqlDataAdapter("CALL ph_Access_Prescription('" + txtPatID + "')", sqlConn);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds, "prescription");
+
+                presDataGridView.DataSource = ds;
+                presDataGridView.DataMember = "prescription";
+
+                sqlConn.Close();
+            }
+            catch (MySqlException er)
+            {
+                MessageBox.Show(er.Message);
+            }
+        }
+
+        private void PresTab_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HomeTab_Click(object sender, EventArgs e)
+        {
 
         }
     }

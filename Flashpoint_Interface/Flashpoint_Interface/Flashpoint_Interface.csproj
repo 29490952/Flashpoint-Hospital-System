@@ -108,6 +108,12 @@
     <Compile Include="PharmacyHomeTabs.Designer.cs">
       <DependentUpon>PharmacyHomeTabs.cs</DependentUpon>
     </Compile>
+    <Compile Include="PharmacyLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PharmacyLogin.Designer.cs">
+      <DependentUpon>PharmacyLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="WelcomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PharmacyHomeTabs.resx">
       <DependentUpon>PharmacyHomeTabs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PharmacyLogin.resx">
+      <DependentUpon>PharmacyLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomePage.resx">
       <DependentUpon>WelcomePage.cs</DependentUpon>
