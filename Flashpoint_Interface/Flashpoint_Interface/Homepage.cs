@@ -36,7 +36,7 @@ namespace Flashpoint_Interface
 
         private void btnPharmacy_Click(object sender, EventArgs e)
         {
-            PharmacyHomeTabs myPhamar = new Flashpoint_Interface.PharmacyHomeTabs();
+            PharmacyLogin myPhamar = new Flashpoint_Interface.PharmacyLogin();
                 myPhamar.ShowDialog();
 
             this.Close();

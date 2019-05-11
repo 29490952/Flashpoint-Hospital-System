@@ -17,11 +17,19 @@ namespace Flashpoint_Interface
         //SQL CONNECTION
         MySqlConnection sqlConn = new MySqlConnection();
         
+<<<<<<< HEAD
+            //VARIABLES 
+            string docID, docName, docSurname, patientID,admissionID,operationID;
+            public Doctor_Activities(MySqlConnection connSql, string DocID, string DocName, string DocSurname)
+            {
+                InitializeComponent();
+=======
         //VARIABLES 
         string docID, docName, docSurname, patientID, admissionID;
         public Doctor_Activities(MySqlConnection connSql, string DocID, string DocName, string DocSurname)
         {
             InitializeComponent();
+>>>>>>> 0a6bfcc56deb502e094b12b6c958c8b05bab269a
 
             sqlConn = connSql;
             docID = DocID;
@@ -105,11 +113,38 @@ namespace Flashpoint_Interface
             tabConDocActiv.SelectedIndex = 2;
         }
 
+<<<<<<< HEAD
+		private void btnDisplay_Click(object sender, EventArgs e)
+		{
+			lstPatient_Report_DerivedFrom_MakePrescription.Visible = true;
+			
+
+
+			string deptID = txtDeptID.Text;
+			string docInvolved = txtInvoved.Text;
+			string opPreCondition = cmbPreCon.SelectedIndex.ToString();
+			string opPostCondition = cmbPostCon.SelectedIndex.ToString();
+			string opStartTime = txtStartTime.Text;
+			string opEndTime = txtEndTime.Text;
+			string opDescription = txtODescription.Text;
+
+			string inputString = "call sp_RecordOperation('" + operationID + "','" + deptID+ "','" + admissionID + "','" + docInvolved + "','" + opPreCondition + "','" + opPostCondition + "','" +opStartTime+ "','"+opEndTime+"','"+opDescription+"')";
+			MySqlCommand command = new MySqlCommand(inputString, sqlConn);
+
+
+		}
+
+		private void btnReferToOperate_Click(object sender, EventArgs e)
+		{
+
+		}
+=======
         string deptID = "";
         private void btnRecordOp_Click(object sender, EventArgs e)
 	    {
             Random random = new Random();
 		    lstPatient_Report_DerivedFrom_MakePrescription.Visible = true;
+>>>>>>> 0a6bfcc56deb502e094b12b6c958c8b05bab269a
 
             sqlConn.Open();
             MySqlCommand departCmd = new MySqlCommand("SELECT departID FROM department WHERE departName = '"+ cmbDepID.SelectedValue + "'", sqlConn);
